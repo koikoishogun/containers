@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',function(){
+	return view('welcome');
+} );
+Route::get('/new/subscriber/',function(){
+	return view('subscriber.form');
+} );
+Route::post('/save/subscriber','sub@save' );
+
+
+
+
