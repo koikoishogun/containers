@@ -1,0 +1,48 @@
+.white{
+
+	color:#fff;
+}
+
+.logo-icon{
+	
+	float:left;
+	margin-top: 10px;
+	width:100px;
+
+}
+
+.logo-name{
+
+	margin-top: 20px;
+}
+.slide{
+
+	background-color:#0076a3;
+}
+
+.slider-img{
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.big-header{
+
+	padding-top:80px;
+}
+
+.order-btn{
+
+	float:left;
+	padding:7px 5px;
+	color:#0076a3;
+}
+
+.catalogue-btn{
+
+	margin-left: 12px;
+	padding:7px 5px;
+	background-color:transparent;
+	stroke:2px solid #0076a3;
+	color:#fff;
+}
