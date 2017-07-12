@@ -14,9 +14,7 @@
 Route::get('/',function(){
 	return view('welcome');
 } );
-Route::get('/new/subscriber/',function(){
-	return view('subscriber.form');
-} );
+Route::get('/new/subscriber/','sub@show' );
 Route::post('/save/subscriber','sub@save' );
 
 
