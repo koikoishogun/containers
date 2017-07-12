@@ -16,6 +16,7 @@
     <body>
 	  <div id="empty">
 	     <button type="button" id="sub_btn">Subscribe</button>
+		 <button type="button" id="cat_btn">Get Catalogue</button>
 	  
 	  </div>
 	
