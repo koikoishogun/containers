@@ -25,8 +25,6 @@
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>
-
-=======
 	  <div id="empty">
 	     <button type="button" id="sub_btn">Subscribe</button>
 	  
