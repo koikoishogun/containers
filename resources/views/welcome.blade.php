@@ -121,15 +121,9 @@
             </div> 
        </div>
 
-
-      <div id="empty">
-         <button type="button" id="sub_btn">Subscribe</button>
-      </div>
-
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>
 
->>>>>>> 60a285ed43a12bb44c4cda3cb18e3f4e653bc595
     </body>
    </html>
