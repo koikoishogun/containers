@@ -46,3 +46,20 @@
 	stroke:2px solid #0076a3;
 	color:#fff;
 }
+
+/*POP UP ORDER FORM STARTS HERE*/
+
+.form_container{
+
+	background-color:#ebebeb;
+}
+.spacer{
+
+	margin-bottom: 10px;
+}
+
+.form-header{
+
+	width:100%
+	height:auto;
+}

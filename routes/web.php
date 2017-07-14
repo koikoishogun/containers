@@ -20,5 +20,9 @@ Route::get('/new/subscriber/',function(){
 Route::post('/save/subscriber','sub@save' );
 
 
+Route::get('/order',function(){
+	return view('subscriber.orderform');
+} );
+
 
 
