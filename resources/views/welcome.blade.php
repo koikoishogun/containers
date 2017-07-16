@@ -102,9 +102,15 @@
 
                                 <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
+                                <div class="empty">
+                                     <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+									 
                                 <div id="empty">
-                                     <button class="order-btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue-btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
                                 </div>
 
                              
@@ -126,11 +132,15 @@
 
                                 <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
+                                 <div class="empty">
+                                     <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+=======
                                  <div id="empty">
-                                     <button class="order-btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
                                      <button class="catalogue-btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
                                 </div>
-
                               </div>
 
                           </div>
@@ -150,9 +160,15 @@
 
                                     <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
+                                     <div class="empty">
+                                         <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
+                                         <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
                                      <div id="empty">
-                                         <button class="order-btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                         <button class="catalogue-btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+                                         <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                         <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
                                     </div>
 
                               </div>
@@ -168,11 +184,6 @@
        
             </div> 
        </div>
-
-
-      <div id="empty">
-         <button type="button" id="sub_btn">Subscribe</button>
-      </div>
 
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
