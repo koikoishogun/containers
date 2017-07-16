@@ -32,33 +32,51 @@
       </div>
       <div class="modal-body">
                <form>
+
+
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="email" type="text" class="form-control" name="email" placeholder="What do you want the container for?">
+                    <select class="type form-control" name="type" placeholder="What do you want the container for?">
+                      <option>-- What do you want the container for? --</option>
+                      <option>Dry Containers</option>
+                      <option>Reefers</option>
+                      <option>Stalls</option>
+                      <option>Cyber Cafes</option>
+                      <option>Homes</option>
+                      <option>Road Show Trucks</option>
+                    </select>
                   </div>
 
 
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    <select class="size form-control" name="size">
+                      <option>-- Size --</option>
+                      <option>2O Ft.</option>
+                      <option>40 Ft.</option>
+                    </select>
                   </div>
                   
                   <div class="input-group spacer">
-                    <span class="input-group-addon">Text</span>
-                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="text" class="form-control" name="name" placeholder="Your Name.">
                   </div>
 
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="email" type="text" class="form-control" name="email" placeholder="What do you want the container for?">
+                    <input type="text" class="form-control" name="phone_number" placeholder="Your Phone Number">
                   </div>
 
-                   <button type="submit" class="btn btn-default">Submit</button>
+                   <div class="input-group spacer">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" class="form-control" name="phone_number" placeholder="Your Email">
+                  </div>
+
               </form> 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Send Me a Quote</button>
       </div>
     </div>
   </div>
