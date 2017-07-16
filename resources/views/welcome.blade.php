@@ -34,7 +34,7 @@
                <form>
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    <input id="email" type="text" class="form-control" name="email" placeholder="What do you want the container for?">
                   </div>
 
 
@@ -47,6 +47,12 @@
                     <span class="input-group-addon">Text</span>
                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
                   </div>
+
+                  <div class="input-group spacer">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="What do you want the container for?">
+                  </div>
+
                    <button type="submit" class="btn btn-default">Submit</button>
               </form> 
       </div>
