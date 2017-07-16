@@ -19,6 +19,48 @@
 	
     <body>
 
+
+      <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Customize Your Container</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+               <form>
+                  <div class="input-group spacer">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                  </div>
+
+
+                  <div class="input-group spacer">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                  
+                  <div class="input-group spacer">
+                    <span class="input-group-addon">Text</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                  </div>
+                   <button type="submit" class="btn btn-default">Submit</button>
+              </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
        <div id="container-fluid">
             <div class="container">
                 <img class="logo-icon img-responsive" src="{{ URL::asset('/images/logo-icon.png')}}"/>
@@ -54,9 +96,15 @@
 
                                 <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
                                 <div class="empty">
-                                     <button class="order-btn" type="button" id="sub_btn"><b>Order Now</b></button>
+                                     <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
                                      <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+									 
+                                <div id="empty">
+                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
                                 </div>
 
                              
@@ -78,9 +126,14 @@
 
                                 <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
                                  <div class="empty">
-                                     <button class="order-btn" type="button" id="sub_btn"><b>Order Now</b></button>
+                                     <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
                                      <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+=======
+                                 <div id="empty">
+                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="catalogue-btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
                                 </div>
                               </div>
 
@@ -101,9 +154,15 @@
 
                                     <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
+
                                      <div class="empty">
                                          <button class="order_btn" type="button" id="sub_btn"><b>Order Now</b></button>
                                          <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
+                                     <div id="empty">
+                                         <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                         <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+
                                     </div>
 
                               </div>
