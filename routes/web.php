@@ -21,6 +21,11 @@ Route::post('/save/subscriber','sub@save' );
 Route::get('/order',function(){
 	return view('subscriber.orderform');
 } );
+Route::get('/get/catalogue/','catalogue@show' );
+
+Route::post('/send/catalogue','catalogue@sen');
+
+
 
 
 

@@ -4,7 +4,7 @@ $(document).ready( function(){
 					'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
 					}
 	});
-	$("#sub_btn").click( function(){
+	$(".sub_btn").click( function(){
 		$.ajax({
 			type:"GET",
 			url:"/new/subscriber/",
@@ -14,4 +14,15 @@ $(document).ready( function(){
 			}
 		});
 	} );
+	
+	$(".catalogue_btn").click(function () {
+		$.ajax({
+			tye:"GET",
+			url:"/get/catalogue/",
+			success:function(data){
+				$( " .empty").empty().html(data);
+			}
+		});
+	});
+	
 } );
