@@ -20,6 +20,9 @@ class catalogue extends Controller
 			 if(   !($email)){
 				 echo"success";
 			 }
+			 else{
+				 echo"fail";
+			 }
 			 
 		}
 		else{
