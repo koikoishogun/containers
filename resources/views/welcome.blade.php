@@ -188,6 +188,23 @@
             </div> 
        </div>
 
+       <div class="container products">
+        <div class="row">
+          <div class="col-md- col-md-offset-1">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/dry-containers.jpg')}}" alt = "First slide">
+          </div>
+
+          <div class="col-md-">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/reefers.jpg')}}" alt = "First slide">
+          </div>
+
+          <div class="col-md-">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/reefers.jpg')}}" alt = "First slide">
+          </div>
+
+        </div>
+       </div>
+
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>
