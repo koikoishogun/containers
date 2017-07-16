@@ -52,6 +52,8 @@
 .form_container{
 
 	background-color:#ebebeb;
+	height:auto;
+	padding-bottom: 20px;
 }
 .spacer{
 
@@ -62,4 +64,8 @@
 
 	width:100%
 	height:auto;
+}
+
+.modal-header{
+	
 }
