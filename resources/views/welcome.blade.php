@@ -190,16 +190,31 @@
 
        <div class="container products">
         <div class="row">
-          <div class="col-md- col-md-offset-1">
+          <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/dry-containers.jpg')}}" alt = "First slide">
           </div>
 
-          <div class="col-md-">
+          <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/reefers.jpg')}}" alt = "First slide">
           </div>
 
-          <div class="col-md-">
-            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/reefers.jpg')}}" alt = "First slide">
+          <div class="col-md-4">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/stalls.jpg')}}" alt = "First slide">
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/cyber.jpg')}}" alt = "First slide">
+          </div>
+
+          <div class="col-md-4">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/homes.jpg')}}" alt = "First slide">
+          </div>
+
+          <div class="col-md-4">
+            <img class="slider-img img-responsive" src = "{{ URL::asset('/images/roadshow.jpg')}}" alt = "First slide">
           </div>
 
         </div>
