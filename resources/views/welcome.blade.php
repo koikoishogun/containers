@@ -220,6 +220,113 @@
         </div>
        </div>
 
+<!--Testimonials-->
+  
+    <div class="slider">
+            <div id = "myCarousel" class = "carousel slide">
+       
+               <!-- Carousel indicators -->
+               <ol class = "carousel-indicators">
+                  <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+                  <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                  <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                  <li data-target = "#myCarousel" data-slide-to = "3"></li>
+               </ol>   
+               
+               <!-- Carousel items -->
+               <div class = "carousel-inner">
+                  
+                  <div class = "item active">
+                        <div class="container">
+                          <div class="row">
+                              <div class="col-md-2 col-md-offset-2">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/avatar-02.png')}}" alt = "First slide">
+                              </div>
+
+                              <div class="col-md-6">
+                                <h3 class="white testimonial-header"><b>I needed a clothes stall</b></h1>
+                              
+                                <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+
+                              </div>
+
+                          </div>
+                        </div>
+                  </div>
+                  
+                  <div class = "item">
+                    <div class="container">
+                         <div class="row">
+                               
+                              <div class="col-md-2 col-md-offset-2">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/avatar-02.png')}}" alt = "First slide">
+                              </div>
+
+                              <div class="col-md-6">
+                                <h3 class="white testimonial-header"><b>I needed a clothes stall</b></h1>
+                              
+                                <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                
+                              </div>
+
+                          </div>
+                    </div>
+                </div>
+                  
+                  <div class = "item">
+                      <div class="container">
+                         <div class="row">
+
+                         <div class="col-md-2 col-md-offset-2">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/avatar-02.png')}}" alt = "First slide">
+                              </div>
+
+                              <div class="col-md-6">
+                                <h3 class="white testimonial-header"><b>I needed a clothes stall</b></h1>
+                              
+                                <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                
+                        </div>
+
+                          </div>
+                       </div>
+                  </div>
+
+               </div>
+               
+               <!-- Carousel nav -->
+               <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">&lsaquo;</a>
+               <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">&rsaquo;</a>
+       
+            </div>
+
+            <div class="container">
+              <h2 class="aboutus-header blue"><b>A Little About Us</b></h2>
+              <p>Containers World Kenya was started back in 2007 as a dry shipping
+Container company by private investors who had invested time trying to
+understand the business after realizing a missing gap in the market.Due
+to increasing clients demands and need to satisfy them , containers Kenya
+was able to grow into not just a dry container dealing company but one
+that can fabricate the containers into consumer customized products. Over
+years of dedication , professionalism and experience we have been able to
+grow to the best recognized container selling (dry and refrigerated) and
+fabrication company. Customer satisfaction is 0ur core purpose and we have
+professional engineers to ensure that our customers are satisfied and keep
+asking for more.Basically , container fabrication is a highly emerging solution
+and alternative to most construction works . Its financially friendly , easy
+and fast to install, durable, convenient for temporary requirements and the
+results are more appealing.We do fabrication into homes (container homes),
+business stalls, offices , mobile clinics , mobile food units ,storage units ,tank
+tainers (mobile filling stations),road show trucks , and any other customized
+product. Necessary padding , wiring partitioning, submitter installations ,
+spray painting is done to the best of our knowledge to ensure best quality
+deliverance . Our expertise and experience has grown to solving all our client
+needs</p>
+            </div>
+       </div>
+
+<!--End Testimonial-->
+
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>
