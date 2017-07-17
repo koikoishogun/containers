@@ -192,14 +192,20 @@
         <div class="row">
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/dry-containers.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/reefers.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/stalls.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
         </div>
@@ -207,14 +213,20 @@
         <div class="row">
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/cyber.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/homes.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
           <div class="col-md-4">
             <img class="slider-img img-responsive" src = "{{ URL::asset('/images/roadshow.jpg')}}" alt = "First slide">
+            <p><b>20ft at Ksh. 180,000/-</b></p>
+            <p><b>40ft at Ksh. 280,000/-</b></p>
           </div>
 
         </div>
