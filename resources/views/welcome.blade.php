@@ -31,8 +31,9 @@
         </button>
       </div>
       <div class="modal-body">
-               <form>
-
+	  <script src="/js/order/form.js"></script>
+               <form class="order_form">
+			   {{csrf_field()}}
 
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -72,12 +73,13 @@
                     <input type="text" class="form-control" name="phone_number" placeholder="Your Email">
                   </div>
 
-              </form> 
+              
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send Me a Quote</button>
+        <button type="submit" class="btn btn-primary">Send Me a Quote</button>
       </div>
+	  </form>
     </div>
   </div>
 </div>
