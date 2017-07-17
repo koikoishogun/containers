@@ -18,7 +18,7 @@
     </head>
 	
     <body>
-
+<script src="/js/order/form.js"></script>
 
       <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -31,7 +31,7 @@
         </button>
       </div>
       <div class="modal-body">
-	  <script src="/js/order/form.js"></script>
+	  
                <form class="order_form">
 			   {{csrf_field()}}
 
