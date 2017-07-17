@@ -25,6 +25,10 @@ Route::get('/get/catalogue/','catalogue@show' );
 
 Route::post('/send/catalogue','catalogue@sen');
 
+Route::get('/admin-panel',function(){
+	return view('admin-panel');
+} );
+
 
 
 
