@@ -15,9 +15,11 @@ $(document).ready( function(){
 			contentType:false,
             data:d,
             success:function(data){
+				$(".quote_btn").remove();
 			     $(".modal-body").empty().html(data);
 			}			
 			});
 			//alert("test");
 	} );
+	$(".test").click().modal();
 } );

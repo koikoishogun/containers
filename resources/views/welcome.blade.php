@@ -19,6 +19,7 @@
 	
     <body>
 <script src="/js/order/form.js"></script>
+<script  src="/js/cat/form.js"></script>
 
       <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -37,7 +38,7 @@
 
                   <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <select class="type form-control" name="type" placeholder="What do you want the container for?">
+                    <select class=" type form-control" name="type" placeholder="What do you want the container for?">
                       <option>-- What do you want the container for? --</option>
                       <option>Dry Containers</option>
                       <option>Reefers</option>
@@ -70,18 +71,48 @@
 
                    <div class="input-group spacer">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input type="text" class="form-control" name="phone_number" placeholder="Your Email">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email">
                   </div>
 
               
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Send Me a Quote</button>
+        <button type="submit" class=" quote_btn btn btn-primary">Send Me a Quote</button>
       </div>
 	  </form>
     </div>
   </div>
+</div>
+<!-- second modal -->
+<div class="modal fade" id="my" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+	<div class="modal-dialog" role="document" >
+	  <div class="modal-content">
+	  <form   class="cat_form" >
+	    <div class="modal-header">
+			   <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+		</div>
+		<div class="modal-body">
+				  
+			{{csrf_field()}}
+			<div class="input-group spacer">
+			   <input type="email"  placeholder="please enter email" name="email" >
+			</div>
+			
+			
+			
+		
+		</div>
+		<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             <button type="submit" class=" quote_btn btn btn-primary">Send Catalogue</button>
+		
+		</div>
+	   </form>
+	  </div>
+	</div>
+
 </div>
 
 
@@ -124,7 +155,7 @@
 									 
                                 <div  class="empty">
                                      <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
                                 </div>
 
                               </div>
@@ -148,7 +179,7 @@
 
                                  <div  class="empty">
                                      <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
                                 </div>
 
                               </div>
@@ -170,11 +201,10 @@
 
                                     <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 
-                                     <div class="empty">
-                                         <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                         <button class="catalogue_btn" type="button" id="sub_btn"><b>Just Send Me a Catalogue</b></button>
-
-                                    </div>
+                                     <div  class="empty">
+                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
+                                </div>
 
                               </div>
                           </div>
@@ -328,8 +358,6 @@ needs</p>
        </div>
 
 <!--End Testimonial-->
-
-        <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>
 

@@ -48,6 +48,20 @@
 
                     </ol>
             </div>
+			<div>
+			 <p>Quotations Sent</p>
+						 @if ( isset($q) )
+							@foreach ($q as $value)
+                             <div>						
+							<p>{{$value->type}}</p>
+							<p>{{$value->size}}</p>
+							<p>{{$value->name}}</p>
+							<p>{{$value->phone_number}}</p>
+							<p>{{$value->email}}</p>
+				            </div><br>
+							@endforeach
+						@endif
+			</div>
 
         </div>
     </div>
