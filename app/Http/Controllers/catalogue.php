@@ -9,9 +9,7 @@ use App\Mail\Send_cat;
 class catalogue extends Controller
 {
     //
-	public function show(){
-		return view('catalogue.form');
-	}
+	
 	public function sen( Request $request ){
 		if (  $request->isMethod("POST") ){
 			 $to=$request->email;

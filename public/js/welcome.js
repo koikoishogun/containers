@@ -15,7 +15,7 @@ $(document).ready( function(){
 		});
 	} );
 	
-	$(".catalogue_btn").click(function () {
+	/*$(".catalogue_btn").click(function () {
 		$.ajax({
 			tye:"GET",
 			url:"/get/catalogue/",
@@ -23,6 +23,6 @@ $(document).ready( function(){
 				$( " .empty").empty().html(data);
 			}
 		});
-	});
+	});*/
 	
 } );
