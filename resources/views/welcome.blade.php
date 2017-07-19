@@ -119,11 +119,73 @@
 
 
        <div id="container-fluid">
-            <div class="container">
-                <img class="logo-icon img-responsive" src="{{ URL::asset('/images/logo-icon.png')}}"/>
-                <img class="logo-name img-responsive" src="{{ URL::asset('/images/logo-name.png')}}"/>
 
-            </div>
+<!--Navigation Bar-->
+
+<nav class="navbar navbar-default">
+  <div class="container menu-bar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo-icon img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+<!--
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+-->
+<!--
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="blue"><a href="#"><b>Home</b></a></li>
+        <li class="blue"><a href="#"><b>About Us</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Our Products</b><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dry Containers</a></li>
+            <li><a href="#">Homes</a></li>
+            <li><a href="#">Offices</a></li>
+            <li><a href="#">Stalls</a></li>
+           <!-- <li role="separator" class="divider"></li> -->
+            <li><a href="#">Reefers</a></li>
+          </ul>
+        </li>
+        <button type="submit" class="btn btn-danger order-button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--nav end-->
        </div>
 
        <div class="slider">
@@ -143,19 +205,19 @@
                   <div class = "item active">
                         <div class="container">
                           <div class="row">
-                              <div class="col-md-6">
-                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/cafe.png')}}" alt = "First slide">
+                              <div class="col-md-5 col-md-offset-1">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel1.jpg')}}" alt = "First slide">
                               </div>
 
                               <div class="col-md-5">
-                                <h1 class="white big-header"><b>Fabricated Cafe</b></h1>
-                                <h3 class="white running-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+                                <h1 class="big-header blue"><b>Business Stalls</b></h1>
+                                <h3 class="running-line red"><b>Financially friendly. Easy and Fast to Install</b></h3>
 
-                                <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
+                                <p class="body-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
 									 
                                 <div  class="empty">
-                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
+                                     <button class="btn btn-primary order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="btn btn-danger catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
                                 </div>
 
                               </div>
@@ -167,19 +229,19 @@
                   <div class = "item">
                     <div class="container">
                          <div class="row">
-                              <div class="col-md-6">
-                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/house.png')}}" alt = "First slide">
+                              <div class="col-md-5 col-md-offset-1">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel2.jpg')}}" alt = "First slide">
                               </div>
 
-                              <div class="col-md-6">
-                                <h1 class="white big-header"><b>Container Homes</b></h1>
-                                <h3 class="white running-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+                              <div class="col-md-5">
+                                <h1 class="big-header blue"><b>Container Homes</b></h1>
+                                <h3 class="running-line red"><b> Durable, Convenient, yet Financially Friendly</b></h3>
 
-                                <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
-
-                                 <div  class="empty">
-                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
+                                <p class="body-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
+                   
+                                <div  class="empty">
+                                     <button class="btn btn-primary order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="btn btn-danger catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
                                 </div>
 
                               </div>
@@ -191,22 +253,23 @@
                   <div class = "item">
                       <div class="container">
                          <div class="row">
-                              <div class="col-md-6">
-                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/stall.png')}}" alt = "First slide">
+                              <div class="col-md-5 col-md-offset-1">
+                                     <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel3.jpg')}}" alt = "First slide">
                               </div>
 
-                              <div class="col-md-6">
-                                <h1 class="white big-header"><b>Stalls & Shops</b></h1>
-                                <h3 class="white running-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+                              <div class="col-md-5">
+                                <h1 class="big-header blue"><b>Business Offices</b></h1>
+                                <h3 class="running-line red"><b>convenient for temporary requirements and the results are more appealing</b></h3>
 
-                                    <p class="white">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
-
-                                     <div  class="empty">
-                                     <button class="order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
-                                     <button class="catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
+                                <p class="body-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat</p>
+                   
+                                <div  class="empty">
+                                     <button class="btn btn-primary order_btn" type="button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                                     <button class="btn btn-danger catalogue_btn" type="button" id="sub_btn" data-toggle="modal" data-target="#my"><b>Just Send Me a Catalogue</b></button>
                                 </div>
 
                               </div>
+
                           </div>
                        </div>
                   </div>

@@ -1,23 +1,49 @@
+/*******************************************House Keeping**************************************/
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+
 .white{
 
 	color:#fff;
 }
 
+.blue{
+	color:#3a5caa;
+}
+
+.red{
+
+	color:#f1534a;
+}
+
+/****************************Logo*************************************/
+
 .logo-icon{
 	
 	float:left;
+	width:70px;
+	height: auto;
+
+}
+.order-button{
+
 	margin-top: 10px;
-	width:100px;
-
+}
+.menu-bar{
+	border-bottom: 1px solid #333;
 }
 
-.logo-name{
 
-	margin-top: 20px;
-}
+/***********************************Slider Styling*************************************************************/
 .slide{
 
-	background-color:#0076a3;
+	background-color:#fff;
 }
 
 .slider-img{
