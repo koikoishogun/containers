@@ -21,6 +21,10 @@
 
 	color:#f1534a;
 }
+.gray-bg{
+
+	background-color: #ebebeb;
+}
 
 /****************************Logo*************************************/
 
@@ -101,14 +105,47 @@
 	padding-right: 20px;
 }
 
+/**************************************PRODUCT STYLING************************************/
+.category-header{
+	text-align: center;
+	padding-bottom: 20px;
+}
 
+.product-box{
+
+	background-color: #ffffff;
+	border-right: 5px solid #ebebeb;
+	border-left: 5px solid #ebebeb;
+	border-bottom: 5px solid #ebebeb;
+	border-top: 5px solid #ebebeb;
+
+}
+.productline{
+
+	padding-bottom: 10px;
+}
 /******************TESTIMONIAL STYLING*********************************************/
 .testimonial-header{
 
-	padding-top:20px;
+	padding-top:50px;
 }
 
+.testimony-image{
 
+	padding-top:40px;
+	padding-bottom:20px;
+}
+.about-text{
+	 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+.contact-icon{
+	width:40px;
+	height:auto;
+	
+}
 
 /***********************************ADMIN PANEL*******************************************/
 .side_bar{
@@ -121,4 +158,18 @@ background-color: #0076a3;
 .admin-link{
 
 	float:left;
+}
+
+/******************************FOOTER STYLING**************************************************/
+.contact-us{
+	border-top:2px solid #fff;
+}
+
+
+
+
+
+/***************************************ABOUT US***************************************************/
+.large-pad{
+	padding-bottom: 200px;
 }

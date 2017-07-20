@@ -1,69 +1,189 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+
+<!doctype html>
+
+<html >
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script  src="/js/jquery-3.2.1.min.js"></script>
+        <script  src="/js/jquery-ui.min.js"></script>
+        <script  src="/js/bootstrap.js"></script>
+        <script  src="/js/welcome.js"></script>
 
-        <title>Omega Opticians</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{ URL::asset('/css/omega-style.css')}}" rel="stylesheet">
+        <link href="{{ URL::asset('/css/containerskenya.css')}}" rel="stylesheet">
+        <title>Containers Kenya</title>
 
-        <meta name = "viewport" content="width=device-width, initial-scale=1">
-         <meta name="csrf-token" content="{{ csrf_token() }}">
+       
 
-        <!-- Styles -->
     </head>
+  
     <body>
-            <div class="head-contact container-fluid">
-                <div class="container">
-                    <p class="text-right white"><b>+254 (20) 2215957 | +254 726 129331 | +254 736 13348&nbsp&nbsp&nbspinfo@omegaoticians.com</b></p>
+    
+      <script src="/js/order/form.js"></script>
+      <script  src="/js/cat/form.js"></script>
+<!--Nav Bar-->
+<div class="container-fluid">
+            <nav class="navbar navbar-default">
+              <div class="container menu-bar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img class="logo-icon img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/></a>
                 </div>
-            </div>
 
-            <div class="head-menu container-fluid">
-                <div class="container">
-                    <div class="col-md-3">
-                        <img class="logo img-responsive" src="{{ URL::asset('/images/png/logo.png')}}"/>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <!--
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            -->
+            <!--
+                  <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
                     </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+            -->
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="blue"><a href="/"><b>Home</b></a></li>
+                    <li class="blue"><a href="about-us"><b>About Us</b></a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Our Products</b><span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Dry Containers</a></li>
+                        <li><a href="#">Homes</a></li>
+                        <li><a href="#">Offices</a></li>
+                        <li><a href="#">Stalls</a></li>
+                       <!-- <li role="separator" class="divider"></li> -->
+                        <li><a href="#">Reefers</a></li>
+                      </ul>
+                    </li>
+                    <button type="submit" class="btn btn-danger order-button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </div>
 
 
-                    <div class="col-md-7 pull-right menu-links">
-                         <nav class="navbar">
-                              <div class="container-fluid">
-                                <div class="navbar-header">
-                                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                  </button>
-                                </div>
-                                <div class="collapse navbar-collapse" id="myNavbar">
-                                  <ul class="nav navbar-nav">
-                                    <li class="active"><a href="/omega/omega/public">Home</a></li>
-                                    <li><a href="aboutus">About Us</a></li>
-                                    <li><a href="services">Services</a></li>
-                                    <li><a href="products">Products</a></li>
-                                    <li><a href="blog">Blog</a></li>
-                                    <a href="storelocator" class="btn btn-danger"><span class="glyphicon glyphicon-home"></span> STORE LOCATOR</a>
-                                  </ul>
-                                </div>
-                              </div>
-                        </nav>
-                    </div>
-                </div>
+        <!--Modal Start Check-->
+
+  <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Customize Your Container</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+          
+                     <form class="order_form">
+               {{csrf_field()}}
+
+                        <div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <select class=" type form-control" name="type" placeholder="What do you want the container for?">
+                            <option>-- What do you want the container for? --</option>
+                            <option>Dry Containers</option>
+                            <option>Reefers</option>
+                            <option>Stalls</option>
+                            <option>Cyber Cafes</option>
+                            <option>Homes</option>
+                            <option>Road Show Trucks</option>
+                          </select>
+                        </div>
+
+
+                        <div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <select class="size form-control" name="size">
+                            <option>-- Size --</option>
+                            <option>2O Ft.</option>
+                            <option>40 Ft.</option>
+                          </select>
+                        </div>
+                        
+                        <div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input type="text" class="form-control" name="name" placeholder="Your Name.">
+                        </div>
+
+                        <div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input type="text" class="form-control" name="phone_number" placeholder="Your Phone Number">
+                        </div>
+
+                         <div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input type="email" class="form-control" name="email" placeholder="Your Email">
+                        </div>
+
+                    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class=" quote_btn btn btn-primary">Send Me a Quote</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <!-- second modal -->
+      <div class="modal fade" id="my" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document" >
+          <div class="modal-content">
+          <form   class="cat_form" >
+            <div class="modal-header">
+               <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+          </div>
+          <div class="modal-body">
+                
+            {{csrf_field()}}
+            <div class="input-group spacer">
+               <input type="email"  placeholder="please enter email" name="email" >
+            </div>
+            
+          </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="submit" class=" quote_btn btn btn-primary">Send Catalogue</button>
+          
+          </div>
+           </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Modal End-->
+
       @yield('content')
-       @include('layouts.footer')
-
-       <script src="{{ URL::asset('/js/jquery.js')}}"></script>
-        <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
-        <script src="{{ URL::asset('/js/omega.js')}}"></script>
-        <script src="{{ URL::asset('/js/omegamaps.js')}}"></script>
-
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCguLTNa4uu5gPNvB5mIXPO3UsSJrwfKww "></script>
-        </body>
-      </html>
+      @include('layouts.footer')

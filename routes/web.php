@@ -29,6 +29,8 @@ Route::post('/send/quote','order@fr');
 Route::get('/admin-panel','admin@landing');
 
 
+/**********************************Pages Routes***************************************/
 
-
-
+Route::get('/about-us',function(){
+	return view('pages.about-us');
+} );
