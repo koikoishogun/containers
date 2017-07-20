@@ -18,6 +18,7 @@
     </head>
 	
     <body>
+	<script src="/js/admin/cat/up_cat.js"></script>
 
     <div class="container-fluid">
         <div class="col-md-2">
@@ -48,6 +49,9 @@
 
                     </ol>
             </div>
+			<div >
+			   <button type="button"  data-toggle="modal" data-target="#cat_modal">Upload Catalogue</button>
+			</div>
 			<div>
 			 <p>Quotations Sent</p>
 						 @if ( isset($q) )
@@ -61,6 +65,32 @@
 				            </div><br>
 							@endforeach
 						@endif
+			</div>
+			<!-- upload catalogue modal  -->
+			<div id="cat_modal"  class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+			    <div class="modal-dialog">
+				   <div class="modal-content">
+				    <form class="up_cat">
+					{{csrf_field()}}
+				      <div class="modal-header">
+					     <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
+			             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+					  </div>
+				      <div class="modal-body up_empty">
+					    <input type="text" name="name" >
+						<input type="file" name="cat">
+					  
+					  </div>
+				      <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="submit" class=" quote_btn btn btn-primary up_remove">Upload Catalogue</button>
+					  </div>
+					  </form>
+					  
+				   </div>
+				</div>
+			    
+			
 			</div>
 
         </div>
