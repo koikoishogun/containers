@@ -27,6 +27,7 @@ Route::post('/send/catalogue','catalogue@sen');
 Route::post('/send/quote','order@fr');
 
 Route::get('/admin-panel','admin@landing');
+Route::post('/admin/upload/catalogue','admin@up_cat');
 
 
 /**********************************Pages Routes***************************************/

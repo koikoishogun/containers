@@ -16,4 +16,12 @@ class admin extends Controller
 		
 		return  view("admin.admin-panel",$data);
 	}
+	public function up_cat(Request $request){
+		if( $request->isMethod("POST") ){
+			echo"hit";
+		}
+		else{
+			abort(401);
+		}
+	}
 }
