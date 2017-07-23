@@ -35,3 +35,11 @@ Route::post('/admin/upload/catalogue','admin@up_cat');
 Route::get('/about-us',function(){
 	return view('pages.about-us');
 } );
+
+Route::get('/blog',function(){
+	return view('pages.blog');
+} );
+
+Route::get('/products',function(){
+	return view('pages.products');
+} );

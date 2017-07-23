@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="col-md-5 gray-bg">
-                        <h3 class="red"><b>Get in Touch with us</b> US</h3>
+                        <h3 class="red"><b>Get in Touch with us.</b></h3>
 
                         <div class="row contact-line">
 

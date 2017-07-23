@@ -71,16 +71,17 @@
                     <li class="blue"><a href="/"><b>Home</b></a></li>
                     <li class="blue"><a href="about-us"><b>About Us</b></a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Our Products</b><span class="caret"></span></a>
+                      <a href="products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Our Products</b><span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Dry Containers</a></li>
-                        <li><a href="#">Homes</a></li>
-                        <li><a href="#">Offices</a></li>
-                        <li><a href="#">Stalls</a></li>
+                        <li><a href="products">Dry Containers</a></li>
+                        <li><a href="products">Homes</a></li>
+                        <li><a href="products">Offices</a></li>
+                        <li><a href="products">Stalls</a></li>
                        <!-- <li role="separator" class="divider"></li> -->
-                        <li><a href="#">Reefers</a></li>
+                        <li><a href="products">Reefers</a></li>
                       </ul>
                     </li>
+                    <li class="blue"><a href="blog"><b>Blog</b></a></li>
                     <button type="submit" class="btn btn-danger order-button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
                   </ul>
                 </div><!-- /.navbar-collapse -->

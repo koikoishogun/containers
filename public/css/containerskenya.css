@@ -31,6 +31,10 @@
 	color: #646464;
 }
 
+.gray-text{
+	color:#a1a1a1;
+}
+
 /****************************Logo*************************************/
 
 .logo-icon{
@@ -238,4 +242,52 @@ height: 100%;
 .mission-statement{
 	
 	text-align:right;
+}
+
+/******************************************************Blog Page**************************************************************/
+.blog-head-text{
+
+
+}
+
+.blog-image{
+
+	width: 100%;
+	height: auto;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.story-thumbnail{
+	width:100%;
+	height: auto;
+	padding-top: 15px;
+}
+
+.blog-sign{
+	font-size: 10pt;
+}
+
+.popular-title{
+	border-bottom: 2px solid #333;
+	padding-bottom: 10px;
+}
+
+.blog-card{
+	border-bottom: 1px solid #fff;
+}
+.blog-content{
+
+	border-bottom: 1px solid #333;
+}
+
+
+
+/**********************************Products Page*******************************************************/
+.product-header{
+	border-bottom: 2px solid #333;
+}
+
+.product-category{
+	padding-bottom: 30px;
 }
