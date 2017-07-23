@@ -1,7 +1,7 @@
 <div class="container-fluid contact-us">
                 <div class="container">
-                    <div class="col-md-5">
-                        <h3 class="red"><b>Do you still have a Question?</b></h3>
+                    <div class="col-md-5 col-md-offset-1">
+                        <h3 class="red"><b>Still have a Question?</b></h3>
 
                         <form action=""  method="post">
                             <div class="form-group">
@@ -19,13 +19,18 @@
                         </form>
                     </div>
 
-                    <div class="col-md-7">
-                        <h1 class="red"><b>CONTACT</b> US</h1>
+                    <div class="col-md-5 gray-bg">
+                        <h3 class="red"><b>Get in Touch with us</b> US</h3>
 
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img class="img-responsive center-block contact-icon" src="{{ URL::asset('/images/contact-icon-01.png')}}"/>
+                        <div class="row contact-line">
+
+                            <div class="col-md-1 col-xs-2">
+                                <img class="img-responsive icon-contact" src="{{ URL::asset('/images/contact-icon-01.png')}}"/>
                             </div>
+
+                            <div class="col-md-11 col-xs-10">
+                                <b>Some Random Place.</br>Nairobi.</b>
+                           
                            <!-- <div class="col-md-10">
                                 Omega Opticians Limited 2nd Floor,<br>
                                 Pioneer House Kimathi street <br>
@@ -33,24 +38,26 @@
                                 Kenya
                             </div>
                             -->
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img class="img-responsive center-block contact-icon" src="{{ URL::asset('/images/contact-icon-02.png')}}"/>
-                            </div>
-
-                            <div class="col-md-10">
-                                <b>+254 (20) 2215957 </br> +254 726 129331 </br> +254 736 133480</b>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img class="img-responsive center-block contact-icon" src="{{ URL::asset('/images/contact-icon-03.png')}}"/>
+                        <div class="row contact-line">
+                            <div class="col-md-1 col-xs-2">
+                                <img class="img-responsive icon-contact" src="{{ URL::asset('/images/contact-icon-02.png')}}"/>
                             </div>
 
-                             <div class="col-md-10">
+                             <div class="col-md-11 col-xs-10">
+                                <b>+254 797 66 33 72</b>
+                            </div>
+                           
+                        </div>
+
+                        <div class="row contact-line">
+                            <div class="col-md-1 col-xs-2">
+                                <img class="img-responsive icon-contact" src="{{ URL::asset('/images/contact-icon-03.png')}}"/>
+                            </div>
+
+                             <div class="col-md-11 col-xs-10">
                                 <b>admin@containerskenya.com</b>
                             </div>
                         </div>

@@ -9,11 +9,11 @@
 		<script  src="/js/jquery-ui.min.js"></script>
 		<script  src="/js/welcome.js"></script>
 
-        <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+" rel="stylesheet">
+        <!--<link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">-->
         <link href="{{ URL::asset('/css/containerskenya.css')}}" rel="stylesheet">
         <title>Containers Kenya</title>
-
-       
 
     </head>
 	
@@ -23,17 +23,10 @@
     <div class="container-fluid">
         <div class="col-md-2">
             <div class="row side_bar">
-                <h2 class="admin-title white"><b>AdminPanel</b></h2>
-            </div>
+                <a class="logo-admin" href="#"><img class="logo-admin img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/></a>
 
-            <div class="row admin-panel-body">
-                <a class="admin-link"><i class="glyphicon glyphicon-check"></i>Interested</a>
-                <a class="admin-link"><i class="glyphicon glyphicon-check"></i>Requested Catalogue</a>
-                <a class="admin-link"><i class="glyphicon glyphicon-check"></i>Requested Catalogue</a>
-
-
-            </div>
-        </div>
+		</div>
+       </div>
 
         <div class="col-md-10">
 

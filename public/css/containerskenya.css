@@ -26,13 +26,19 @@
 	background-color: #ebebeb;
 }
 
+.gray{
+
+	color: #646464;
+}
+
 /****************************Logo*************************************/
 
 .logo-icon{
 	
 	float:left;
-	width:70px;
+	max-width:50px;
 	height: auto;
+
 
 }
 .order-button{
@@ -40,6 +46,8 @@
 	margin-top: 10px;
 }
 .menu-bar{
+	padding-top: 10px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #333;
 }
 
@@ -118,11 +126,16 @@
 	border-left: 5px solid #ebebeb;
 	border-bottom: 5px solid #ebebeb;
 	border-top: 5px solid #ebebeb;
+	padding-bottom: 20px;
 
 }
 .productline{
 
 	padding-bottom: 10px;
+}
+
+.product-box{
+    text-align: center;
 }
 /******************TESTIMONIAL STYLING*********************************************/
 .testimonial-header{
@@ -136,9 +149,7 @@
 	padding-bottom:20px;
 }
 .about-text{
-	 -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-	column-count: 2;
+border-bottom:  1px solid  #ebebeb;
 }
 
 .contact-icon{
@@ -148,8 +159,24 @@
 }
 
 /***********************************ADMIN PANEL*******************************************/
+.big{
+
+	size:100px;
+}
 .side_bar{
-background-color: #0076a3;
+border-right: 1px solid  #ebebeb;
+max-width: 70px;
+min-width: 70px;
+height: 100%;
+}
+
+.logo-admin{
+
+	border-bottom: 1px solid  #ebebeb;
+	width:50px;
+	height:auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .admin-title{
@@ -162,14 +189,53 @@ background-color: #0076a3;
 
 /******************************FOOTER STYLING**************************************************/
 .contact-us{
-	border-top:2px solid #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #646464;
+}
+.icon-contact{
+	max-width: 30px;
+	height: auto;
+	float:left;
+	padding-right: 10px;
+}
+.contact-line{
+	border-bottom: 1px solid #fff;
+	padding:10px;
 }
 
 
 
-
-
 /***************************************ABOUT US***************************************************/
-.large-pad{
-	padding-bottom: 200px;
+
+.testimonial{
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+/***************************************ABOUT US PAGE******************************************/
+.about-us-text{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.about-us-story{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+.mission{
+	border-bottom: 1px solid #ebebeb;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.mission-statement{
+	
+	text-align:right;
 }
