@@ -52,6 +52,77 @@
         </div>
     </div>
 
+    <div class="row admin-content">
+
+                <div class="container">
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="tab" href="#home">Blog Manager</a></li>
+                      <li><a data-toggle="tab" href="#menu1">Appointments</a></li>
+                      <li><a data-toggle="tab" href="#menu2">Messages</a></li>
+                    </ul>
+
+
+                    <div class="tab-content">
+                      <div id="home" class="tab-pane fade in active">
+                        <h3>Blog Manager</h3>
+                        <p>The blog manager helps you keep track of your blogs. Post, edit, delete your posts with convinience</p>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h2>Post a new blog</h2>
+
+                                        <form action="" method="post">
+                                          <div class="form-group">
+                                            <label for="blog_title">Blog Title:</label>
+                                            <input type="text" class="form-control" id="blogtitle">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="blogbody">Blog Body:</label>
+                                            <textarea class="form-control" rows="8" id="blogbody"></textarea>
+                                          </div>
+
+
+                                          <button type="submit" class="btn btn-default" id="publishblog">Publish</button>
+                                          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                                        </form> 
+
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div id="menu1" class="tab-pane fade">
+                        <h3>Appointment Manager</h3>
+                        <p>Appointment Manager is a tool that helps you track appintments to your different branches</p>
+                        <h2 class="red">Booked Appointments</h2>
+
+                        <ol>
+                         @foreach($appointments as $appointment)
+
+                            <li><h4 class="gray">Email: {!! $appointment->email   !!} </h4></li>
+
+                            <p> <b> Number:</b>{!! $appointment->phone_number  !!} </p>
+                            <p> <b> Branch:</b>{!! $appointment->branch  !!} </p>
+                
+                        @endforeach
+                        </ol>
+                      </div>
+
+                      <div id="menu2" class="tab-pane fade">
+                        <h3>Message Manager</h3>
+                        <p>Understand what you customer wants. Messages, Reviews, Comments, Enquiries</p>
+                      </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            
+
         <script src="{{ URL::asset('/js/jquery.js')}}"></script>
         <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('/js/omega.js')}}"></script>

@@ -1,97 +1,101 @@
-<!doctype html>
 
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<script  src="/js/jquery-3.2.1.min.js"></script>
-		<script  src="/js/jquery-ui.min.js"></script>
-		<script  src="/js/welcome.js"></script>
+@extends('layouts.admin-master')
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-" rel="stylesheet">
-        <!--<link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">-->
-        <link href="{{ URL::asset('/css/containerskenya.css')}}" rel="stylesheet">
-        <title>Containers Kenya</title>
 
-    </head>
+@section('content')
 	
-    <body>
-	<script src="/js/admin/cat/up_cat.js"></script>
+	<div class="container">
+		<div class="row">
+			<h1 class="red orders-title"><b>Orders</b></h1>
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
 
-    <div class="container-fluid">
-        <div class="col-md-2">
-            <div class="row side_bar">
-                <a class="logo-admin" href="#"><img class="logo-admin img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/></a>
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
 
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+
+			</div>
+
+
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
+
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+			</div>
+
+
+
+
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
+
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+
+			</div>
+
+
+
+
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
+
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+
+			</div>
+
+
+
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
+
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+
+			</div>
+
+
+
+			<div class="col-md-6 order-card">
+				<h3 class="blue name"><b>John Doe</b></h3>
+				<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0720123456 |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> email@example.com</p>
+
+				<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+				<p class="order-details"><span class="blue"><b>Size:</b></span> 20Ft. </p>
+				<p class="order-details"><span class="blue"><b>Use:</b></span> Container Home </p>
+				<p class="order-details"><span class="blue"><b>Quantity:</b></span> 1 </p>
+				<p class="order-signature">Order made <span class="blue">3 days ago</span></p>
+
+			</div>
 		</div>
-       </div>
+	</div>
 
-        <div class="col-md-10">
 
-            <div class="row section">
-                <h2><b>Interested Users</b></h2>
-                    <ol>
-                        <li>
-                            <h4>John Doe</h4>
-                        </li>
-
-                        <p>Mobile: 0712345678</p>
-                        <p>Date: 2 days ago. 11th July 2017</p>
-
-                    </ol>
-            </div>
-			<div >
-			   <button type="button"  data-toggle="modal" data-target="#cat_modal">Upload Catalogue</button>
-			</div>
-			<div>
-			 <p>Quotations Sent</p>
-						 @if ( isset($q) )
-							@foreach ($q as $value)
-                             <div>						
-							<p>{{$value->type}}</p>
-							<p>{{$value->size}}</p>
-							<p>{{$value->name}}</p>
-							<p>{{$value->phone_number}}</p>
-							<p>{{$value->email}}</p>
-				            </div><br>
-							@endforeach
-						@endif
-			</div>
-			<!-- upload catalogue modal  -->
-			<div id="cat_modal"  class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-			    <div class="modal-dialog">
-				   <div class="modal-content">
-				    <form class="up_cat">
-					{{csrf_field()}}
-				      <div class="modal-header">
-					     <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
-			             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
-					  </div>
-				      <div class="modal-body up_empty">
-					    <input type="text" name="name" >
-						<input type="file" name="cat">
-					  
-					  </div>
-				      <div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="submit" class=" quote_btn btn btn-primary up_remove">Upload Catalogue</button>
-					  </div>
-					  </form>
-					  
-				   </div>
-				</div>
-			    
-			
-			</div>
-
-        </div>
-    </div>
-
-        <script src="{{ URL::asset('/js/jquery.js')}}"></script>
-        <script src="{{ URL::asset('/js/bootstrap.js')}}"></script>
-        <script src="{{ URL::asset('/js/omega.js')}}"></script>
-
-    </body>
-   </html>
+@endsection

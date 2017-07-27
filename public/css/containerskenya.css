@@ -117,10 +117,26 @@
 	padding-right: 20px;
 }
 
+/**************************************Home Page Media Query******************************/
+@media only screen and (max-width: 500px) {
+   .big-header {
+        padding-top: 10px;
+    }
+
+   .slider-img{
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+		}
+
+	.order-btn{
+		padding-bottom:20px;
+	}
+}
 /**************************************PRODUCT STYLING************************************/
 .category-header{
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .product-box{
@@ -290,4 +306,95 @@ height: 100%;
 
 .product-category{
 	padding-bottom: 30px;
+}
+
+
+
+
+/***********************************************Admin Home Page*******************************************************/
+.admin-menu-bar{
+
+	-webkit-box-shadow: 0px 0px 12px 3px rgba(135,130,135,0.69);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(135,130,135,0.69);
+    box-shadow: 0px 0px 12px 3px rgba(135,130,135,0.69);
+
+}
+
+.admin-logo{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #ebebeb;
+}
+
+.admin-menu-icon{
+
+	float:left;
+	max-height: 60px;
+	width:auto;
+	border-left:1px solid #ebebeb;
+}
+
+.orders-title{
+
+	padding-top: 70px;
+}
+
+.order-card{
+
+	border-radius: 4px;
+	background-color: #ebebeb;
+	border:7px solid  #ffffff;
+}
+
+.name{
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.contacts{
+	padding-left: 20px;
+
+}
+
+.order-details-title{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.order-details{
+	padding-left: 20px;
+	margin: 0px;
+}
+.order-signature{
+	padding-top: 20px;
+	color:#8b8b8b;
+	padding-left: 20px;
+}
+
+
+/***********************************Optimized for Mobile******************************************/
+@media only screen and (max-width: 768px) {
+   
+		   .admin-menu-icon{
+
+			float:left;
+			max-height: 50px;
+			width:auto;
+			border-left:1px solid #ebebeb;
+		}
+
+
+		.orders-title{
+			padding-top: 30px;
+		}
+
+}
+
+
+
+
+/******************************************************Interested Page***********************************************************/
+.catalogue-signature{
+	padding-left: 20px;
 }
