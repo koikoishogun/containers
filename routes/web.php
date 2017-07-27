@@ -29,6 +29,10 @@ Route::get('/admin-panel','admin@landing');
 Route::post('/admin/upload/catalogue','admin@up_cat');
 
 
+/********************************************Admin Panel Routes*****************************************/
+Route::get('/interested',function(){
+	return view('admin.prospective');
+} );
 /**********************************Pages Routes***************************************/
 
 Route::get('/about-us',function(){
@@ -42,3 +46,5 @@ Route::get('/blog',function(){
 Route::get('/products',function(){
 	return view('pages.products');
 } );
+
+
