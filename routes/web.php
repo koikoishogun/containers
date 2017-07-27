@@ -22,7 +22,6 @@ Route::get('/order',function(){
 	return view('subscriber.orderform');
 } );
 //Route::get('/get/catalogue/','catalogue@show' );
-
 Route::post('/send/catalogue','catalogue@sen');
 Route::post('/send/quote','order@fr');
 

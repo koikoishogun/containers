@@ -2,7 +2,7 @@
 
 <div id="form_div">
 
-	<form  id="sub_form" enctype="multipart/form-data" method="POST" >
+	<form  id="sub_form" >
 	           {{csrf_field()}}
 		<input type="text" name="name">
 		<input type="email" name="email">
