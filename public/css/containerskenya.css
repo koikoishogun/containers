@@ -60,6 +60,7 @@
 .slide{
 
 	background-color:#fff;
+	padding-bottom: 20px;
 }
 
 .slider-img{
@@ -70,7 +71,7 @@
 
 .big-header{
 
-	padding-top:80px;
+	padding-top:60px;
 }
 
 .order-btn{
@@ -118,7 +119,11 @@
 }
 
 /**************************************Home Page Media Query******************************/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+   .slide{
+   		padding-bottom: 80px;
+   }
+
    .big-header {
         padding-top: 10px;
     }
@@ -140,33 +145,39 @@
 }
 
 .product-box{
-
 	background-color: #ffffff;
-	border-right: 5px solid #ebebeb;
-	border-left: 5px solid #ebebeb;
-	border-bottom: 5px solid #ebebeb;
-	border-top: 5px solid #ebebeb;
 	padding-bottom: 20px;
+	text-align: center;
+	margin-bottom:30px;
+	margin-left:-15px;
+	border-bottom: 7px solid #3a5caa;
 
 }
 .productline{
-
 	padding-bottom: 10px;
 }
 
-.product-box{
-    text-align: center;
+.product-text{
+	padding:20px 17px 5px 17px;
 }
+
+.price-text{
+	padding-left: 20px;
+}
+
 /******************TESTIMONIAL STYLING*********************************************/
+.testimony-container{
+	padding-top:50px;
+	padding-bottom: 50px;
+}
 .testimonial-header{
 
-	padding-top:50px;
+	padding-top:30px;
 }
 
-.testimony-image{
-
-	padding-top:40px;
-	padding-bottom:20px;
+.testimonial-image{
+	width: 100%;
+	height: auto;
 }
 .about-text{
 border-bottom:  1px solid  #ebebeb;
@@ -175,7 +186,19 @@ border-bottom:  1px solid  #ebebeb;
 .contact-icon{
 	width:40px;
 	height:auto;
-	
+}
+
+/*************************************Adapt Testimonials For Mobile**********************************/
+@media only screen and (max-width: 768px) {
+	.testimonial-header{
+		padding-top:0px;
+		}
+}
+
+/************************************ABOUT US**********************************/
+.about-us-container{
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 /***********************************ADMIN PANEL*******************************************/
@@ -208,10 +231,14 @@ height: 100%;
 }
 
 /******************************FOOTER STYLING**************************************************/
+.question-form{
+	padding-bottom: 40px;
+}
 .contact-us{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #646464;
+	height:100%;
 }
 .icon-contact{
 	max-width: 30px;
@@ -224,6 +251,19 @@ height: 100%;
 	padding:10px;
 }
 
+.web-foot{
+	background-color:#f1534a;
+}
+/*****************************************Adapting Footer for Mobile (Media Query)*********************************/
+@media only screen and (max-width: 768px) {
+	.get-in-touch{
+		padding-top: 20px;
+	}
+
+	.contact-us{
+		margin-top: 20px;
+	}
+}
 
 
 /***************************************ABOUT US***************************************************/
@@ -259,7 +299,15 @@ height: 100%;
 	
 	text-align:right;
 }
+/*****************************************Optimize About us page for mobile*****************************************************/
+@media only screen and (max-width: 768px) {
+	.about-us-story{
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
 
+	}
+}
 /******************************************************Blog Page**************************************************************/
 .blog-head-text{
 
@@ -397,4 +445,18 @@ height: 100%;
 /******************************************************Interested Page***********************************************************/
 .catalogue-signature{
 	padding-left: 20px;
+}
+
+
+
+/*********************************************************************Blog post page*****************************************/
+.blog-form-container{
+	margin-top: 30px;
+}
+.blog-btn{
+	float:left;
+	margin-left: 5px;
+}
+.posted-blog-container{
+	border-bottom:1px solid #ebebeb;
 }

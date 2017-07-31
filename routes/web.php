@@ -33,6 +33,10 @@ Route::post('/admin/upload/catalogue','admin@up_cat');
 Route::get('/interested',function(){
 	return view('admin.prospective');
 } );
+
+Route::get('/post-blog',function(){
+	return view('admin.post-blog');
+} );
 /**********************************Pages Routes***************************************/
 
 Route::get('/about-us',function(){

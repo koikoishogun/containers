@@ -22,11 +22,11 @@
 			<h3 class="red popular-title"><b>Popular Stories</b></h3>
 
 			<div class="row blog-card">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-3">
 					<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
 				</div>
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-9">
 					<h4 class="blue"><b>Lorem ipsum dolor sit amet</b></h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<a href="about-us"> <b>Read more...</b></a>
@@ -37,11 +37,11 @@
 			</div>
 
 			<div class="row blog-card">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-3">
 					<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
 				</div>
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-9">
 					<h4 class="blue"><b>Lorem ipsum dolor sit amet</b></h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -51,11 +51,11 @@
 			</div>
 			
 			<div class="row blog-card">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-3">
 					<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
 				</div>
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-9">
 					<h4 class="blue"><b>Lorem ipsum dolor sit amet</b></h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -65,11 +65,11 @@
 			</div>
 
 			<div class="row blog-card">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-3">
 					<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
 				</div>
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-9">
 					<h4 class="blue"><b>Lorem ipsum dolor sit amet</b></h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -79,11 +79,11 @@
 			</div>
 			
 			<div class="row blog-card">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-3">
 					<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
 				</div>
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-9">
 					<h4 class="blue"><b>Lorem ipsum dolor sit amet</b></h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut

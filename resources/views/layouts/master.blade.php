@@ -161,14 +161,14 @@
           <div class="modal-content">
           <form   class="cat_form" >
             <div class="modal-header">
-               <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
+               <h1 class="modal-title" id="exampleModalLabel1">We'll send you a catalogue</h1>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
           </div>
           <div class="modal-body">
                 
             {{csrf_field()}}
-            <div class="input-group spacer">
-               <input type="email"  placeholder="please enter email" name="email" >
+            <div class="form-group">
+                 <input class="form-control" type="email"  placeholder="please enter email" name="email" >
             </div>
             
           </div>
