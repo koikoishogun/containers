@@ -18,9 +18,9 @@ class blog extends Controller
 		
 		
 	}
-	public function add (Request $request){
+	public function ad (Request $request){
 		//return view('pages.blog');
-		if( $request->isMethod("POST")  ){
+		/*if( $request->isMethod("POST")  ){
 			if($request->file('img') && $request->file('img')->isValid() &&    $request->file('doc')  &&   $request->file('doc')->isValid()    ){
             $path='/files/';
             $doc_name=$request->file('doc')->getClientOriginalName();
@@ -48,8 +48,8 @@ class blog extends Controller
 				}
                 
             }
-        }
-		
+        }*/
+		echo"hit";
 			
 			
 			

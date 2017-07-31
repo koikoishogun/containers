@@ -36,7 +36,7 @@ Route::get('/admin-panel','admin@landing');
 Route::post('/admin/upload/catalogue','admin@up_cat');
 
 //admin post a blog
-Route::post('/post/a/blog','blog@add');
+Route::post('/post/a/blog','blog@ad');
 
 Route::get('/show/post/','blog@show');
 Route::get('/show/post/form','blog@show_form');
