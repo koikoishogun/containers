@@ -25,24 +25,37 @@ Route::get('/order',function(){
 Route::post('/send/catalogue','catalogue@sen');
 Route::post('/send/quote','order@fr');
 
-Route::get('/admin-panel','admin@landing');
-Route::post('/admin/upload/catalogue','admin@up_cat');
+
 
 
 /********************************************Admin Panel Routes*****************************************/
 Route::get('/interested',function(){
 	return view('admin.prospective');
 } );
+Route::get('/admin-panel','admin@landing');
+Route::post('/admin/upload/catalogue','admin@up_cat');
+
+//admin post a blog
+Route::post('/post/a/blog','blog@add');
+
+Route::get('/show/post/','blog@show');
+Route::get('/show/post/form','blog@show_form');
+//Route::post('/admin/upload/catalogue','admin@up_cat');
+
+/********************************************  END Admin Panel Routes*****************************************/
 /**********************************Pages Routes***************************************/
 
 Route::get('/about-us',function(){
 	return view('pages.about-us');
 } );
+// hizi ndio blog routes
 
-Route::get('/blog',function(){
-	return view('pages.blog');
-} );
+//return blog view
+Route::get('/blog','blog@show');
+//admin post a blog
+Route::post('/post/a/blog','blog@post');
 
+//mwisho wa  blog routes
 Route::get('/products',function(){
 	return view('pages.products');
 } );
