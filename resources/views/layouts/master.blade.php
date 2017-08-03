@@ -82,7 +82,7 @@
                       </ul>
                     </li>
                     <li class="blue"><a href="blog"><b>Blog</b></a></li>
-                    <button type="submit" class="btn btn-danger order-button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
+                    <button type="button" class="btn btn-danger order-button" data-toggle="modal" data-target="#myModal"><b>Order Now</b></button>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -93,7 +93,7 @@
         <!--Modal Start Check-->
 
   <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade  order_modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -109,7 +109,7 @@
 
                         <div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <select class=" type form-control" name="type" placeholder="What do you want the container for?">
+                          <select class=" type form-control" name="type" placeholder="What do you want the container for?" required>
                             <option>-- What do you want the container for? --</option>
                             <option>Dry Containers</option>
                             <option>Reefers</option>
@@ -123,7 +123,7 @@
 
                         <div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                          <select class="size form-control" name="size">
+                          <select class="size form-control" name="size"  required>
                             <option>-- Size --</option>
                             <option>2O Ft.</option>
                             <option>40 Ft.</option>
@@ -132,17 +132,21 @@
                         
                         <div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                          <input type="text" class="form-control" name="name" placeholder="Your Name.">
+                          <input type="text" class="form-control" name="name" placeholder="Your Name."  required>
                         </div>
 
                         <div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <input type="text" class="form-control" name="phone_number" placeholder="Your Phone Number">
+                          <input type="text" class="form-control" name="phone_number" placeholder="Your Phone Number" required>
                         </div>
 
                          <div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <input type="email" class="form-control" name="email" placeholder="Your Email">
+                          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+						<div class="input-group spacer">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input type="number" class="form-control" name="no" placeholder="Enter Quantity" value=1 required>
                         </div>
 
                     
@@ -161,14 +165,20 @@
           <div class="modal-content">
           <form   class="cat_form" >
             <div class="modal-header">
-               <h1 class="modal-title" id="exampleModalLabel1">Customize Your Container</h1>
+               <h1 class="modal-title" id="exampleModalLabel1">We'll send you a catalogue</h1>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
           </div>
           <div class="modal-body">
                 
             {{csrf_field()}}
-            <div class="input-group spacer">
-               <input type="email"  placeholder="please enter email" name="email" >
+			<div class="form-group">
+                 <input class="form-control" type="text"  placeholder="please enter your name" name="name"  required>
+            </div>
+			<div class="form-group">
+                 <input class="form-control" type="text"  placeholder="please enter your phone number" name="no"  required>
+            </div>
+            <div class="form-group">
+                 <input class="form-control" type="email"  placeholder="please enter email" name="email"  required>
             </div>
             
           </div>
@@ -185,6 +195,51 @@
       </div>
 
       <!--Modal End-->
+	  <!-- order sucess modal -->
+			<div class="modal fade" id="o_suc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document" >
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+          </div>
+          <div class="modal-body">
+                <p>A Quotation Will Be Sent to Your Email..............</p>
+            
+            
+          </div>
+
+          <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+          </div>
+          </div>
+        </div>
+
+      </div>
+	  
+	  <!-- End  order sucess modal  -->
+	  <!-- catalogue send success modal -->
+		<div class="modal fade" id="c_suc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+				<div class="modal-dialog" role="document" >
+				  <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				  </div>
+				  <div class="modal-body">
+						<p>A Catalogue Will Be Sent to Your Email..............</p>
+					
+					
+				  </div>
+
+				  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  
+				  </div>
+				  </div>
+				</div>
+
+      </div>
+	  <!--END catalogue send success modal-->
 
       @yield('content')
       @include('layouts.footer')

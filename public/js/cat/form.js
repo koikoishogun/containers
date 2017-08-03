@@ -5,7 +5,7 @@ $(document).ready( function(){
 					}
 	});
 	
-	$(" .cat_form").submit( function(e){
+	$(".cat_form").submit( function(e){
 		e.preventDefault();
 		var  d =new FormData(this);
 		$.ajax({
@@ -15,12 +15,16 @@ $(document).ready( function(){
 			async:true,
 			processData:false,
 			contentType:false,
-			success:function(data){
-				alert(data);
+			success: function(){
+				$(".cat_form")[0].reset();
+				$("#myModal").modal("hide");
+				$("#o_suc").modal("show");
+				//alert("hi");
+				
 			}
 			
 		}); 
-		//alert("hi");
+		//
 	} );
 
 });

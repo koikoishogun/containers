@@ -15,7 +15,8 @@ class sub extends Controller
 			$details=["name"=>$request->name,"email"=>$request->email,"phone_no"=>$request->no];
 			$subs=subscriber::create($details);
 			if($subs){
-				echo'success regi';
+				$msg="success";
+				return $msg;
 				
 			}
 			else{
@@ -28,6 +29,9 @@ class sub extends Controller
 		
 	}
 	public function show(){
-		return view('subscriber.form');
+		$su=subscriber::all();
+		return view("admin.prospective",["subs"=>$su]);
+		
 	}
+	
 }

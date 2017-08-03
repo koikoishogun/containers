@@ -14,9 +14,10 @@ $(document).ready( function(){
 			processData:false,
 			contentType:false,
             data:d,
-            success:function(data){
-				$(".quote_btn").remove();
-			     $(".modal-body").empty().html(data);
+            success:function(){
+				$(".order_form")[0].reset();
+				$("#myModal").modal("hide");
+				$("#o_suc").modal("show");
 			}			
 			});
 			//alert("test");

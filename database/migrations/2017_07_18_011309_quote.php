@@ -21,7 +21,8 @@ class Quote extends Migration
 			$table->string('name');
 			$table->string('phone_number');
 			$table->string('email');
-            $table->timestamps();
+			$table->integer('number')->unsigned();
+			$table->timestamps();
 			
 		}  );
     }

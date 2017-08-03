@@ -1,25 +1,31 @@
 <div class="container-fluid contact-us">
                 <div class="container">
-                    <div class="col-md-5 col-md-offset-1">
-                        <h3 class="red"><b>Still have a Question?</b></h3>
+                    <script src="/js/msg/msg.js"></script>
+                            <div class="col-md-5 col-md-offset-1 question-form">
+                                <h3 class="red"><b>Still have a Question?</b></h3>
 
-                        <form action=""  method="post">
-                            <div class="form-group">
-                              <label for="usr">Your Email</label>
-                              <input type="email" class="form-control theemail" id="usr" name="email">
+                                <form class="msg_form">
+								{{csrf_field()}}
+								<div class="form-group">
+                                      <label for="usrr">Your Name</label>
+                                      <input type="text" class="form-control theemail" id="usrr" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="usr">Your Email</label>
+                                      <input type="email" class="form-control theemail" id="usr" name="email">
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label for="pwd">Message</label>
+                                      <textarea class="message form-control" rows="3" id="message" name="message"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-danger pull-right submitmessage"><span class="glyphicon glyphicon-share"></span> <b>Leave us a Message</b> </button>
+                                    
+                                </form>
                             </div>
 
-                            <div class="form-group">
-                            <label for="pwd">Message</label>
-                              <textarea class="message form-control" rows="3" id="message" name="message"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-danger pull-right submitmessage"><span class="glyphicon glyphicon-share"></span> <b>Leave us a Message</b> </button>
-                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        </form>
-                    </div>
-
-                    <div class="col-md-5 gray-bg">
+                    <div class="col-md-5 gray-bg get-in-touch">
                         <h3 class="red"><b>Get in Touch with us.</b></h3>
 
                         <div class="row contact-line">
@@ -64,8 +70,30 @@
 
                     </div>
                 </div>
-            </div>
+        </div>
 
             <div class="container-fluid web-foot">
-                <p class="text-center"><b>Containers Kenya 2107. All rights reserved.</b></p>
+                <p class="text-center white"><b>Containers Kenya 2107. All rights reserved.</b></p>
             </div>
+			<!--msg success modal  -->
+			<div class="modal fade" id="msg_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document" >
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+          </div>
+          <div class="modal-body">
+                <p>Your Message  Has been Sent we'll email soonest</p>
+            
+            
+          </div>
+
+          <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+          </div>
+          </div>
+        </div>
+
+      </div>
+	  <!-- End msg success modal  -->

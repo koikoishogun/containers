@@ -9,69 +9,53 @@
 		
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Container Homes</b></h3>
+              @if(isset($ho))
+				 @foreach($dry as $value)
+					<div class="col-md-4 col-sm-6">
+						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+					</div>
+			@endforeach
+			@endif
 
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
+			
 		</div>
 
 
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Office Blocks</b></h3>
 
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-		</div>
+			@if(isset($off))
+				 @foreach($dry as $value)
+					<div class="col-md-4 col-sm-6">
+						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+					</div>
+			@endforeach
+			@endif
 
 
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Reefers</b></h3>
 
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
+			@if(isset($re))
+				 @foreach($dry as $value)
+					<div class="col-md-4 col-sm-6">
+						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+					</div>
+			@endforeach
+			@endif
 		</div>
 
 
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Dry Containers</b></h3>
 
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
-
-			<div class="col-md-4 col-sm-6">
-				<img class="img-responsive story-thumbnail" src="{{ URL::asset('/images/thumbnail.png')}}"/>
-			</div>
+			@if(isset($dry))
+				 @foreach($dry as $value)
+					<div class="col-md-4 col-sm-6">
+						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+					</div>
+			@endforeach
+			@endif
 		</div>
 
 

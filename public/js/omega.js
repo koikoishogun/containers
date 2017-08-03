@@ -73,6 +73,15 @@ $(".book-appointment").click(
     	//alert("slid");
 	});
 
+		
+		$('#testimonialCarousel').carousel({
+			interval:2000;
+			});
+
+		 $('#testimonialCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});
+
 
 	$("#publishblog").click(
 	function(e){
