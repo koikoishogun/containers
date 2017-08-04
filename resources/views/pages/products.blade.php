@@ -10,7 +10,7 @@
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Container Homes</b></h3>
               @if(isset($ho))
-				 @foreach($dry as $value)
+				 @foreach($ho as $value)
 					<div class="col-md-4 col-sm-6">
 						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
 					</div>
@@ -25,7 +25,7 @@
 			<h3 class="red product-header"><b>Office Blocks</b></h3>
 
 			@if(isset($off))
-				 @foreach($dry as $value)
+				 @foreach($off as $value)
 					<div class="col-md-4 col-sm-6">
 						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
 					</div>
@@ -37,7 +37,7 @@
 			<h3 class="red product-header"><b>Reefers</b></h3>
 
 			@if(isset($re))
-				 @foreach($dry as $value)
+				 @foreach($re as $value)
 					<div class="col-md-4 col-sm-6">
 						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
 					</div>

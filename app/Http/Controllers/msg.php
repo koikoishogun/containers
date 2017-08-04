@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\msg;
+use App\message as ms;
 
 class msg extends Controller
 {
     //
 	public function send(Request $request){
 		if( $request->isMethod("POST")){
-			$det=["name"=>$request->name,"email"=>$request->email,"body"=>$request->body];
-			$ms=msg::create($det);
+			$det=["name"=>$request->name,"email"=>$request->email,"body"=>$request->message];
+			$ms=ms::create($det);
 			if($ms){
 				return $we="Message Sent Successfully";
 				
@@ -21,7 +21,7 @@ class msg extends Controller
 		
 	}
 	public function show(){
-		$m=msg::all();
+		$m=ms::all();
 		return view("msg.admin_show",["msg"=>$m]);
 	}
 }

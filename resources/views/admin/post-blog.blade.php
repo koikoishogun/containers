@@ -2,7 +2,7 @@
 
 
 @section('content')
-
+<script src="/js/blog/post.js"></script>
 
           
                <div class="container">

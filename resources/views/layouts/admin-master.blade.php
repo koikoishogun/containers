@@ -22,7 +22,8 @@
     </head>
   
     <body>
-	<script src=""></script>
+	<script src="/js/cat/form.js"></script>
+	<script   src="/js/order/form.js"></script>
      
 	  
 
@@ -32,7 +33,7 @@
 
 
 
-
+<script   src="/js/img/form.js"></script>
 <!--Upload Images Form Modal-->
 <div id="imageUpload" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -51,7 +52,7 @@
 
                         <div class="form-group">
                           <label for="exampleTextarea">Brief Image Description</label>
-                          <textarea class="form-control"  rows="3"  name="desc  "     required></textarea>
+                          <textarea class="form-control"  rows="3"  name="descri"     required></textarea>
                         </div>
 
 

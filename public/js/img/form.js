@@ -11,12 +11,14 @@ $(document).ready(function(){
 			
 			type:"POST",
 			url:"/upload/pic",
+			async:true,
 			contentType:false,
 			processData:false,
 			data:d,
 			success:function(){
-				$(".msg_form")[0].reset();
-				$("#msg_modal").modal("show");
+				$(".img_form")[0].reset();
+				//$("#msg_modal").modal("show");
+				alert(data);
 			}
 		});
 		

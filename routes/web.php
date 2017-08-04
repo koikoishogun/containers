@@ -58,9 +58,6 @@ Route::post('/post/a/blog','blog@ty');
 //show admin msgs
 Route::post('/show/msg','msg@show');
 
-//upload container pics
-Route::post('/show/msg','msg@show');
-
 //admin upload product  pics
 Route::post('/upload/pic','img@upload');
 
@@ -90,9 +87,7 @@ Route::get('/about-us',function(){
 
 
 //mwisho wa  blog routes
-Route::get('/products',function(){
-	return view('pages.products');
-} );
+Route::get('/products',"img@show");
 Route::get('/p','blog@ad_p');
 
 
