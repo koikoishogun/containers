@@ -24,6 +24,7 @@
     <body>
 	<script src="/js/cat/form.js"></script>
 	<script   src="/js/order/form.js"></script>
+	<script   src="/js/msg/show_admin.js"></script>
      
 	  
 
@@ -31,7 +32,7 @@
 
 
 
-
+<button  type="button">Show Message</button>
 
 <script   src="/js/img/form.js"></script>
 <!--Upload Images Form Modal-->

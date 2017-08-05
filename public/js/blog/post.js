@@ -13,12 +13,26 @@ $(document).ready(function (){
 			url:"/post/a/blog",
 			contentType:false,
 			processData:false,
+			async:true,
 			data:d,
 			success:function(data){
 				//$(".bg_ps").empty().html(data);
 				$(".blo_form")[0].reset();
 				//alert("Blog Updated Successfully............");
 				$(".posts_div").empty().html(data);				}
+		});
+		//alert("test");
+		
+	} );
+	$(".update_btn").click( function(){
+        var id= $(".blg_id").val();
+		$.ajax({
+			type:"GET",
+			url:"/update/blog/form/"+id,
+			async:true,
+			success:function(data){
+				
+						}
 		});
 		//alert("test");
 		

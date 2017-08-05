@@ -55,11 +55,18 @@ Route::get('/blog','blog@show');
 //admin post a blog
 Route::post('/post/a/blog','blog@ty');
 
+//admin update blog
+Route::post('/update/blog','blog@update');
+
+//update blog form
+Route::get('/update/blog/form/{id} ','blog@update_form');
+
 //show admin msgs
 Route::post('/show/msg','msg@show');
 
 //admin upload product  pics
 Route::post('/upload/pic','img@upload');
+
 
 
 

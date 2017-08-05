@@ -22,7 +22,7 @@ class blog extends Controller
 	public function ty(Request $request){
 		//return view('pages.blog');
 		if( $request->isMethod("POST")  ){
-			if($request->file('img') && $request->file('img')->isValid()    ){
+			if( $request->file('img') && $request->file('img')->isValid()    ){
 				$path='/public';
 				$img_name=$request->file('img')->getClientOriginalName();
 				//store file
@@ -58,6 +58,40 @@ class blog extends Controller
 	public function ad_po(){
 		$kj=p::orderBy('created_at','desc')->SimplePaginate(5);
 		return view('blog.admin_posts',["posts"=>$kj]);
+	}
+	public function update(  Request $request ){
+		
+		if(  $request->isMethod( "POST")  ){
+					//fetch specific post
+				$pst=p::find($request->id);
+				if($pst){
+						$pst->title=$request->title;
+						$pst->name=$request->name;
+						$pst->body=$request->body;
+						$pst->image=$request->image;
+						 $ps_p=$pst->save();
+						if($ps_p ){
+							return $msg="success";
+							
+						}
+					
+				}
+				
+			
+		}
+		
+		
+		
+	}
+	public function update_form( $id ){
+		$pst=p::find($id);
+		if( $pst  ){
+			$pss=["title"=>$request->title,"name"=>=$request->name,"body"=>=$request->body,"image"=>$request->image];
+			return view("admin.post-blog", $pss );
+			
+		}
+		
+		
 	}
 	
 	
