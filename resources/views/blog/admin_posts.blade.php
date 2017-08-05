@@ -2,7 +2,7 @@
 @if(isset( $posts ))
 		@foreach( $posts as $value  )
 		  <div>
-		  <input type="hidden"  value={{$value->id }} />
+		  <input type="hidden"  value="{{$value->id }}" class="blg_id" />
 			 <h3 class="blue"><b>{{$value->title}}</b></h3>
 			  <div class="posted-blog-container">
 				  <p class="blue">{{$value->created_at->diffForHumans()}}</p>
