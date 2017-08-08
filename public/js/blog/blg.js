@@ -4,16 +4,20 @@ $(document).ready(  function(){
 					'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
 					}
 	});
-	$(".bg_btn").click(  function(){
-		$.ajax({
-			type:"GET",
-			url:"/show/post/form",
-			success:function(data){
-				$(".bg_ps").empty().html(data);
-			}
-		});
+	$(".update_btn").each(  function(){
+					$(this).click( function(){
+					var id= $(".blg_id").val();
+					$.ajax({
+						type:"GET",
+						url:"/update/blog/form/"+id,
+						async:true,
+						success:function(data){
+							$(".update_div").empty().html(data);
+							
+									}
+					});
+				
+				
+			} );
 		
 	} );
-	
-	
-} );

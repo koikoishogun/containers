@@ -12,6 +12,9 @@
 */
 
 Route::get('/',function(){
+	return view('layouts.master');
+} );
+Route::get('/welcome',function(){
 	return view('welcome');
 } );
 //show sub form
@@ -62,7 +65,7 @@ Route::post('/update/blog','blog@update');
 Route::get('/update/blog/form/{id} ','blog@update_form');
 
 //show admin msgs
-Route::post('/show/msg','msg@show');
+Route::get('/show/msg','msg@show');
 
 //admin upload product  pics
 Route::post('/upload/pic','img@upload');

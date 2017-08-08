@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -23,7 +22,7 @@ class blog extends Controller
 		//return view('pages.blog');
 		if( $request->isMethod("POST")  ){
 			if( $request->file('img') && $request->file('img')->isValid()    ){
-				$path='/public';
+				$path='/public/blog';
 				$img_name=$request->file('img')->getClientOriginalName();
 				//store file
 				
@@ -40,7 +39,7 @@ class blog extends Controller
 										
 					}
 					else{
-						echo "uable to upload";
+						echo "unable to upload";
 					}
 				   
 			   
@@ -86,11 +85,14 @@ class blog extends Controller
 	public function update_form( $id ){
 		$pst=p::find($id);
 		if( $pst  ){
-			$pss=["title"=>$request->title,"name"=>=$request->name,"body"=>=$request->body,"image"=>$request->image];
+			$pss=["title"=>$request->title,"name"=>$request->name,"body"=>$request->body,"image"=>$request->image];
 			return view("admin.post-blog", $pss );
 			
 		}
 		
+		
+	}
+	public function del_post($id){
 		
 	}
 	

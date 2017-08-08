@@ -10,10 +10,10 @@ $(document).ready(   function() {
 	$(".home").click( function(){
 		$.ajax({
 			type:"GET",
-			url:"/",
+			url:"/welcome",
 			success:function(data){
 				
-				$("body").empty().html(data);
+				$(".ajax_div").empty().html(data);
 			}
 		});
 	} );
@@ -23,27 +23,35 @@ $(document).ready(   function() {
 			url:"/about-us",
 			success:function(data){
 				
-				$("body").empty().html(data);
+				$(".ajax_div").empty().html(data);
 			}
 		});
 	} );
-	$(".produc").click( function(){
-		$.ajax({
-			type:"GET",
-			url:"/products",
-			success:function(data){
-				
-				$("body").empty().html(data);
-			}
-		});
+	$(".products").each( function(){
+
+			  $(this).click( function(){
+						$.ajax({
+					type:"GET",
+					url:"/products",
+					success:function(data){
+						
+						$(".ajax_div").empty().html(data);
+					}
+				});
+
+		  
+	  }  );
+
+
+
 	} );
-	$(".bloga").click( function(){
+	$(".blog_li").click( function(){
 		$.ajax({
 			type:"GET",
 			url:"/blog",
 			success:function(data){
 				
-				$("body").empty().html(data);
+				$(".ajax_div").empty().html(data);
 			}
 		});
 	} );

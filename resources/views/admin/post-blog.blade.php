@@ -3,9 +3,9 @@
 
 @section('content')
 <script src="/js/blog/post.js"></script>
-
+  
           
-               <div class="container">
+               <div class="container  update_div">
                     <div class="row blog-form-container">
                       <div class="col-md-6"> 
                           <h1 class="red">Post Your Blog</h1>
@@ -15,7 +15,7 @@
                                       <div class="input-group spacer">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
 										@if( isset( $title ) )
-                                        <input type="text" class="form-control" name="blog_title" placeholder="Blog Title"   required  value={{$title}}>
+                                        <input type="text" class="form-control" name="blog_title" placeholder="Blog Title"   required  value="{{$title}}">
                                       
 									    @else
 										  <input type="text" class="form-control" name="blog_title" placeholder="Blog Title"   required >
@@ -27,7 +27,7 @@
                                       <div class="input-group spacer">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
 										@if(isset($name)  )
-                                        <input type="text" class="form-control" name="blog_author" placeholder="Blog Author Name"  required value={{$name}} >
+                                        <input type="text" class="form-control" name="blog_author" placeholder="Blog Author Name"  required value="{{$name}} ">
 									    @else
 											<input type="text" class="form-control" name="blog_author" placeholder="Blog Author Name"  required>
 											
@@ -37,7 +37,7 @@
                                       <div class="form-group">
                                         <label for="exampleTextarea">Blog Content</label>
 										@if( isset($body) )
-                                        <textarea class="form-control" id="blog_content" rows="3"  name="blog_content"  required   value=$body></textarea>
+                                        <textarea class="form-control" id="blog_content" rows="3"  name="blog_content"  required   value="$body"></textarea>
 									     @else
 									     <textarea class="form-control" id="blog_content" rows="3"  name="blog_content"  required></textarea>
 									    @endif

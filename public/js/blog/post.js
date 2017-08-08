@@ -24,36 +24,20 @@ $(document).ready(function (){
 		//alert("test");
 		
 	} );
-	$(".update_btn").click( function(){
-        var id= $(".blg_id").val();
-		$.ajax({
-			type:"GET",
-			url:"/update/blog/form/"+id,
-			async:true,
-			success:function(data){
-				
-						}
-		});
-		//alert("test");
-		
-	} );
 	function refresh(){
-		var s=$("#q_id").val();
 		$.ajax( {
-		url:"/admin/view/posts",
-		type:"GET",
-		async:true,
-		timeout:3000,
-		success:function (data){
-			$(".posts_div").empty().html(data);
-			
-		}
+					url:"/admin/view/posts",
+					type:"GET",
+					async:true,
+					timeout:1000,
+					success:function (data){
+						$(".posts_div").empty().html(data);
+						
+					}
 		
+		
+	    } );
+	}
+	setInterval(refresh,30000);
 		
 	} );
-	}
-	
-	setInterval(refresh,30000);
-	
-	
-});

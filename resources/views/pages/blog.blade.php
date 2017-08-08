@@ -1,5 +1,3 @@
-@extends('layouts.master')
-@section('content')
 
 <div class="container">
 	@if(  isset($posts)  )
@@ -24,4 +22,3 @@
    @endif
 </div>
 
-@endsection

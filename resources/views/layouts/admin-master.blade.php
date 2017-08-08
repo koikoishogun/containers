@@ -32,7 +32,7 @@
 
 
 
-<button  type="button">Show Message</button>
+<a  href="/show/msg">Show Message</a>
 
 <script   src="/js/img/form.js"></script>
 <!--Upload Images Form Modal-->

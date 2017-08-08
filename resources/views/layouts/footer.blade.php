@@ -1,3 +1,5 @@
+<!--START OF FOOTER -->
+
 <div class="container-fluid contact-us">
                 <div class="container">
                     <script src="/js/msg/msg.js"></script>
@@ -97,3 +99,6 @@
 
       </div>
 	  <!-- End msg success modal  -->
+	  
+	  
+	  <!-- End footer ---->

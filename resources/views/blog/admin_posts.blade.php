@@ -1,4 +1,5 @@
-  
+  <script   src="/js/blog/blg.js" >
+  </script>
 @if(isset( $posts ))
 		@foreach( $posts as $value  )
 		  <div>
@@ -9,7 +10,7 @@
 				  <div class="buttons pull-right">
 						<b></b>
 					  <button type="button" class="btn blog-btn btn-success  update_btn"><b>update</b></button>
-					  <button type="submit" class="btn blog-btn btn-warning delete_btn"><b>delete</b></button>
+					  <button type="button" class="btn blog-btn btn-warning delete_btn"><b>delete</b></button>
 				  </div>
 				  
 			  </div>

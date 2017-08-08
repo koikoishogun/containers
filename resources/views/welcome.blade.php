@@ -1,9 +1,4 @@
-@extends('layouts.master')
-@section('content')
-
-
-
-             <div class="slider">
+<div class="slider">
                   <div id = "myCarousel" class = "carousel slide">
              
                      <!-- Carousel indicators -->
@@ -348,4 +343,4 @@
             </div>
       </div>
 
-  @endsection
+
