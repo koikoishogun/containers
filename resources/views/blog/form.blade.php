@@ -38,7 +38,7 @@
                                       <div class="form-group">
                                         <label for="exampleInputFile">Upload Image</label>
 										@if(isset ($image) )
-											<img  src="/storage/{{$image}} "   / >
+											<img  src="/storage/blog/{{$image}} "   / >
 										<label for="exampleInputFile1">Replace Image</label>
 										<input type="file" class="form-control-file" id="exampleInputFile1" aria-describedby="fileHelp" name="img" required>
 										

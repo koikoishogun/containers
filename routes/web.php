@@ -76,6 +76,7 @@ Route::post('/upload/pic','img@upload');
 Route::get('/post-blog',function(){
 	return view('admin.post-blog');
 } );
+Route::get('/delete/post/{id} ',"blog@del_post" );
 
 
 

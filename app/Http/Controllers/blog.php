@@ -64,16 +64,25 @@ class blog extends Controller
 					//fetch specific post
 				$pst=p::find($request->id);
 				if($pst){
-					
-						/*$pst->title=$request->blog_title;
+					if(  $request->file('img') && $request->file('img')->isValid()  ){
+						$path='/public/blog';
+				        $img_name=$request->file('img')->getClientOriginalName();
+						$sto=$request->file("img")->storeAs($path,$img_name);
+						if($sto){
+							$pst->title=$request->blog_title;
 						$pst->name=$request->blog_author;
 						$pst->body=$request->blog_content;
 						$pst->image=$img_name;
 						 $ps_p=$pst->save();
 						if($ps_p ){
-							return $msg="success";
+							//return $msg="success";
+							return redirect("/post-blog");
 							
-						}*/
+						}
+						
+							
+						}
+					}
 					
 				}
 				
@@ -94,6 +103,10 @@ class blog extends Controller
 		
 	}
 	public function del_post($id){
+		$pst=p::destroy($id);
+		if($pst){
+			return redirect("/post-blog");;
+		}
 		
 	}
 	

@@ -32,6 +32,7 @@ $(document).ready(  function(){
 			contentType:false,
 			processData:false,
 			success:function(data){
+				alert("Blog has been updated successfully");
 				$(".update_div").empty().html(data);
 				
 			}
@@ -39,6 +40,24 @@ $(document).ready(  function(){
 		
 		
 	}    );
+	$(".posts_div").on(  "click",".delete_btn" ,function(e){
+		e.stopImmediatePropagation();
+		//e.stopPropagation();
+		//alert("test");
+		var id= $(".blg_id").val();
+					$.ajax({
+						type:"GET",
+						url:"/delete/post/"+id,
+						async:true,
+						success:function(data){
+							alert("Post Deleted Successfully");
+							$(".update_div").empty().html(data);
+							
+									}
+					});
+		
+	} );
+	
 		
 	} );
 	
