@@ -2,10 +2,10 @@
     @if( isset( $msg )  )
 		  @foreach(   $msg  as $value  )
 	           <div>
-						   {{$value->name}}
-						   {{$value->email}}
-							 {{  $value->body   }}
-						{{  $value->created_at->diffForHumans()  }}
+						   {{$value->name}}<br>
+						   {{$value->email}}<br>
+							 {{  $value->body   }}<br>
+						{{  $value->created_at->diffForHumans()  }}<br>
 			   
 			   
 			   </div>

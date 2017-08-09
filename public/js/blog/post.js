@@ -4,7 +4,8 @@ $(document).ready(function (){
 					'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
 					}
 	});
-	$(".blo_form").submit( function(e){
+	$(".update_div").on( "submit",".blo_form",function(e){
+		e.stopImmediatePropagation();
 		e.preventDefault();
 		
 		var d =new FormData(this);

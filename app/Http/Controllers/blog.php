@@ -64,15 +64,16 @@ class blog extends Controller
 					//fetch specific post
 				$pst=p::find($request->id);
 				if($pst){
-						$pst->title=$request->title;
-						$pst->name=$request->name;
-						$pst->body=$request->body;
-						$pst->image=$request->image;
+					
+						/*$pst->title=$request->blog_title;
+						$pst->name=$request->blog_author;
+						$pst->body=$request->blog_content;
+						$pst->image=$img_name;
 						 $ps_p=$pst->save();
 						if($ps_p ){
 							return $msg="success";
 							
-						}
+						}*/
 					
 				}
 				
@@ -85,8 +86,8 @@ class blog extends Controller
 	public function update_form( $id ){
 		$pst=p::find($id);
 		if( $pst  ){
-			$pss=["title"=>$request->title,"name"=>$request->name,"body"=>$request->body,"image"=>$request->image];
-			return view("admin.post-blog", $pss );
+			$pss=[ "id"=>$pst->id, "title"=>$pst->title,"name"=>$pst->name,"body"=>$pst->body,"image"=>$pst->image];
+			return view("blog.form", $pss );
 			
 		}
 		

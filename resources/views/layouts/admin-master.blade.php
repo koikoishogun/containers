@@ -22,9 +22,7 @@
     </head>
   
     <body>
-	<script src="/js/cat/form.js"></script>
-	<script   src="/js/order/form.js"></script>
-	<script   src="/js/msg/show_admin.js"></script>
+	
      
 	  
 
@@ -32,9 +30,9 @@
 
 
 
-<a  href="/show/msg">Show Message</a>
+<button class="msg_li">Show Message</button>
 
-<script   src="/js/img/form.js"></script>
+
 <!--Upload Images Form Modal-->
 <div id="imageUpload" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -99,12 +97,53 @@
    <img class="admin-logo logo-icon img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/>
 
     <div class="pull-right">
-          <a class="" href="admin-panel"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/orders.jpg')}}"/></a>
-          <a class="" href="interested"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/interested.jpg')}}"/></a>
+          <a class="order_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/orders.jpg')}}"/></a>
+          <a class="int_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/interested.jpg')}}"/></a>
           
-          <a class="" href="post-blog"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/blog.jpg')}}"/></a>
+          <a class="blog_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/blog.jpg')}}"/></a>
 
-          <a class="" href="#" data-toggle="modal" data-target="#imageUpload"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/images.jpg')}}"/></a>
+          <a class="#" href="#" data-toggle="modal" data-target="#imageUpload"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/images.jpg')}}"/></a>
     </div>
 </div>
-      @yield('content')
+<!--UPDATE  AJAX DIV -->
+<div   class="container update_div">
+			<div class="container">
+		<div class="row">
+			<h1 class="red orders-title"><b>Orders</b></h1>
+			@if(   isset(  $order) )
+					@foreach(  $order as $value   )
+						<div class="col-md-6 order-card">
+							<h3 class="blue name"><b>{{$value->name}}</b></h3>
+							<p class="contacts"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> {{$value->phone_number}} |  <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>  {{$value->email}} </p>
+
+							<h4 class="order-details-title red"><b>Order Details</b></h4>
+
+							<p class="order-details"><span class="blue"><b>Size:</b></span> {{$value->size}} </p>
+							<p class="order-details"><span class="blue"><b>Use:</b></span>{{$value->type}}</p>
+							<p class="order-details"><span class="blue"><b>Quantity:</b></span>{{$value->number}} </p>
+							<p class="order-signature">Order made <span class="blue">{{ $value->created_at->diffForHumans() }}</span></p>
+
+						</div>
+			        
+					@endforeach
+			@endif
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+</div>
+<!--  END UPDATE  AJAX DIV -->
+<script src="/js/admin/links/link.js"></script>
+
+<script src="/js/cat/form.js"></script>
+	<script   src="/js/order/form.js"></script>
+	<script   src="/js/msg/show_admin.js"></script>
+	<script   src="/js/img/form.js"></script>
+    </body>
+	</html>

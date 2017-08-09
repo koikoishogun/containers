@@ -46,6 +46,9 @@ Route::get('/interested',"admin@inter" );
 //admin home
 Route::get('/admin-panel','admin@landing');
 
+//admin orders
+Route::get('/orders','admin@orders');
+
 //upload Catalogue
 Route::post('/admin/upload/catalogue','admin@up_cat');
 
@@ -69,6 +72,10 @@ Route::get('/show/msg','msg@show');
 
 //admin upload product  pics
 Route::post('/upload/pic','img@upload');
+//admin blog base view
+Route::get('/post-blog',function(){
+	return view('admin.post-blog');
+} );
 
 
 
@@ -82,9 +89,7 @@ Route::post('/upload/pic','img@upload');
 
 /********************************************  END Admin Panel Routes*****************************************/
 
-Route::get('/post-blog',function(){
-	return view('admin.post-blog');
-} );
+
 
 /**********************************Pages Routes***************************************/
 

@@ -1,11 +1,4 @@
-
-@extends('layouts.admin-master')
-
-
-@section('content')
-
-	
-	<div class="container">
+<div class="container">
 	<h1 class="red orders-title"><b>Interested</b></h1>
 	@if(  isset($subs) )
 		@foreach( $subs as $value)
@@ -26,6 +19,3 @@
 	  @endforeach
 	@endif
 	</div>
-
-
-@endsection

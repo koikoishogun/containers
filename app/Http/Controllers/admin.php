@@ -15,6 +15,13 @@ class admin extends Controller
 		//$cat=s_cat::all()->toArray();
 		$data=["order"=>$q];//,$cat];
 		
+		return  view("layouts.admin-master",$data);
+	}
+	public function orders(){
+		$q=quotation::all();
+		//$cat=s_cat::all()->toArray();
+		$data=["order"=>$q];//,$cat];
+		
 		return  view("admin.admin-panel",$data);
 	}
 	public function inter(){
