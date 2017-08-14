@@ -8,7 +8,7 @@
 
 					<!--<h3 class="red"></h3>-->
 					<p class="blog-sign gray-text">By {{$value->name}}&nbsp;&nbsp;&nbsp;Posted  {{$value->created_at->diffForHumans()}}</p>
-					<img class="img-responsive blog-image" src="/storage/blog/{{$value->image}}" alt="container"/>
+					<img class="img-responsive blog-image" src="/storage/{{$value->image}}" alt="container"/>
 					<p class="gray blog-text">
 					{{$value->body}}
 					</p>
