@@ -52,7 +52,7 @@ return [
             'driver' => 'mysql',
             'host' => $host,//env('DB_HOST', '127.0.0.1'),
             //'port' => env('DB_PORT', '3306'),
-            'database' => $database//env('DB_DATABASE', 'forge'),
+            'database' => $database,//env('DB_DATABASE', 'forge'),
             'username' =>$username ,//env('DB_USERNAME', 'forge'),
             'password' =>$password ,//env('DB_PASSWORD', ''),
             //'unix_socket' => env('DB_SOCKET', ''),
