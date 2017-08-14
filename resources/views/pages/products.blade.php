@@ -30,7 +30,7 @@
 					</div>
 			@endforeach
 			@endif
-
+		</div>
 
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Reefers</b></h3>
