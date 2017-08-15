@@ -33,7 +33,7 @@ class CreatePostsTable extends Migration
 			$table->string('title');
 			$table->string('name');
 			$table->text('body');
-			$table->text('image');
+			$table->binary('image');
 			//$table->integer('featured')->null();
 			
 			//$table->foreign('image')->references('id')->on('uploads');

@@ -11,7 +11,7 @@
               @if(isset($ho))
 				 @foreach($ho as $value)
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+						<img class="img-responsive story-thumbnail" src="{{$value->name}}"/>
 					</div>
 			@endforeach
 			@endif
@@ -26,7 +26,7 @@
 			@if(isset($off))
 				 @foreach($off as $value)
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+						<img class="img-responsive story-thumbnail" src="{{$value->name}}"/>
 					</div>
 			@endforeach
 			@endif
@@ -38,7 +38,7 @@
 			@if(isset($re))
 				 @foreach($re as $value)
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+						<img class="img-responsive story-thumbnail" src="{{$value->name}}"/>
 					</div>
 			@endforeach
 			@endif
@@ -51,7 +51,7 @@
 			@if(isset($dry))
 				 @foreach($dry as $value)
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive story-thumbnail" src="/storage/{{$value->name}}"/>
+						<img class="img-responsive story-thumbnail" src="{{$value->name}}"/>
 					</div>
 			@endforeach
 			@endif

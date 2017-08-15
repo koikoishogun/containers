@@ -22,13 +22,15 @@ class blog extends Controller
 		//return view('pages.blog');
 		if( $request->isMethod("POST")  ){
 			if( $request->file('img') && $request->file('img')->isValid()    ){
-				$path='/public/blog';
-				$img_name=$request->file('img')->getClientOriginalName();
+				//$path='/public/blog';
+				//$img_name=$request->file('img')->getClientOriginalName();
 				//store file
 				
-				$sto=$request->file("img")->storeAs($path,$img_name);
+				//$sto=$request->file("img")->storeAs($path,$img_name);
+				//storeblob in mysql_affected_rows
+				$sto=file_get_contents($request->file("img")  );
 				if( $sto ){ 
-					$p_det=["title"=>$request->blog_title,"name"=>$request->blog_author,"body"=>$request->blog_content,"image"=>$img_name];
+					$p_det=["title"=>$request->blog_title,"name"=>$request->blog_author,"body"=>$request->blog_content,"image"=>$sto];
 					$po=p::create($p_det);
 					if(  $po ){
 						$pzz=p::orderBy('created_at','desc')->SimplePaginate(5);

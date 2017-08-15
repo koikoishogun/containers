@@ -10,12 +10,15 @@ class img extends Controller
     //
 	public function upload(Request $request){
 		if($request->file('img') && $request->file('img')->isValid()){
-			$img_name=$request->file("img")->getClientOriginalName();
-			$de=["name"=>$img_name,"category"=>$request->cat,"description"=>$request->descri];
+			//$img_name=$request->file("img")->getClientOriginalName();
 			
-			$sto=$request->file("img")->storeAs("/public",$img_name);
-			$ge=image::create($de);
-			if($sto  && $ge ){
+			
+			$sto=file_get_contents($request->file("img") )  ;
+			
+			if($sto){
+				
+				$de=["img"=>$sto,"category"=>$request->cat,"description"=>$request->descri];
+				$ge=image::create($de);
 				
 				return $ms="success";
 				
