@@ -1,7 +1,7 @@
   <script   src="/js/blog/blg.js" ></script>
 @if(isset( $posts ))
 		@foreach( $posts as $value  )
-		  <div >
+		  <div class="postblogs">
 		  <input type="hidden"  value="{{$value->id }}" class="blg_id" />
 			 <h3 class="blue"><b>{{$value->title}}</b></h3>
 			  <div class="posted-blog-container">

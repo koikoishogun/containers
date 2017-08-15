@@ -3,6 +3,15 @@
   background-image:none;
 }
 
+.carousel-image-left{
+	margin-left: -15px;
+}
+
+.carousel-image-right{
+	position: relative;
+	right: 0px;
+}
+
 .navbar-default {
     background-color: white;
     border-color: white;
@@ -348,14 +357,23 @@ height: 100%;
 
 
 /**********************************Products Page*******************************************************/
+
 .product-header{
-	border-bottom: 2px solid #333;
+	background-color: #ebebeb;
+	padding-top:4px;
+	padding-left: 10px;
+	padding-bottom: 4px;
+	width:100%;
 }
 
 .product-category{
 	padding-bottom: 30px;
 }
 
+.story-thumbnail{
+	width:100%;
+	height:auto;
+}
 
 
 
@@ -445,6 +463,11 @@ height: 100%;
 /******************************************************Interested Page***********************************************************/
 .catalogue-signature{
 	padding-left: 20px;
+	font-size: 10px;
+	font-weight: 100;
+}
+.interested-details{
+	padding-left: 20px;
 }
 
 
@@ -459,4 +482,8 @@ height: 100%;
 }
 .posted-blog-container{
 	border-bottom:1px solid #ebebeb;
+}
+
+.postblogs{
+	padding-bottom: 20px;
 }

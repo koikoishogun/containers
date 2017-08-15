@@ -16,7 +16,7 @@
                               <div class="container">
                                 <div class="row slider-container">
                                     <div class="col-md-5 col-md-offset-1">
-                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel1.jpg')}}" alt = "First slide">
+                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/business-stalls-01.png')}}" alt = "First slide">
                                     </div>
 
                                     <div class="col-md-5">
@@ -41,7 +41,7 @@
                           <div class="container">
                                <div class="row">
                                     <div class="col-md-5 col-md-offset-1">
-                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel2.jpg')}}" alt = "First slide">
+                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/containerhouses-01.png')}}" alt = "First slide">
                                     </div>
 
                                     <div class="col-md-5">
@@ -157,7 +157,7 @@
                             <div class="container">
                                <div class="row">
                                     <div class="col-md-5 col-md-offset-1">
-                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/carousel3.jpg')}}" alt = "First slide">
+                                           <img class="slider-img img-responsive" src = "{{ URL::asset('/images/offices-01.png')}}" alt = "First slide">
                                     </div>
 
                                     <div class="col-md-5">
@@ -183,8 +183,8 @@
                      </div>
                      
                      <!-- Carousel nav -->
-                     <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev"><img class="img-responsive" src = "{{ URL::asset('/images/carousel-LEFT-02.png')}}" alt = "Left"></a>
-                     <a class = "carousel-control right" href = "#myCarousel" data-slide = "next"><img class="img-responsive" src = "{{ URL::asset('/images/carousel-right-02.png')}}" alt = "Left"></a>
+                     <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev"><img class="img-responsive carousel-image-left" src = "{{ URL::asset('/images/carousel-LEFT-02.png')}}" alt = "Left"></a>
+                     <a class = "carousel-control right" href = "#myCarousel" data-slide = "next"><img class="img-responsive carousel-image-right" src = "{{ URL::asset('/images/carousel-right-02.png')}}" alt = "Left"></a>
              
                   </div> 
              </div>
@@ -279,7 +279,7 @@
                       <div class="col-md-8 col-xs-8 tesimonial-text">
                         <h3 class="red testimonial-header">Set up a salon, fast and easy!</h3>
                         <p>If you are looking to set up a salon business within a very short time, a containers salon is probably the best bet. Its easy to set up and interiors are well fitted</p>
-                        <p class="blue">~Cyber Owner</p>
+                        <p class="blue">~Salon Owner</p>
                       </div>
                     </div>
                   </div>
@@ -308,7 +308,7 @@
                           <div class="col-md-8 col-xs-8 tesimonial-text">
                             <h3 class="red testimonial-header">Its better and more appealing</h3>
                             <p>Container fabricated house are more appealing, with better looking interiors at a fraction of the price it would cost to buy an entire house</p>
-                            <p class="blue">~Cyber Owner</p>
+                            <p class="blue">~Home Owner</p>
                           </div>
                       </div>
                   </div>
@@ -336,7 +336,7 @@
                             that can fabricate the containers into consumer customized products. Over
                             years of dedication , professionalism and experience we have been able to
                             grow to the best recognized container selling (dry and refrigerated) and
-                            fabrication company. <a href="about-us"><b>Read more...</b></a>
+                            fabrication company. <a href="#" class="about_us"><b>Read more...</b></a>
                         </p>
                   </div>
                 </div>

@@ -9,8 +9,7 @@
 				 
 				<div class="col-md-12 order-card">
 					<h4 class="blue name"><b>{{$value->name}}</b></h4>
-					<h4 class="blue name"><b>{{$value->email}}</b></h4>
-					<h4 class="blue name"><b>{{$value->phone_no}}</b></h4>
+					<p class="interested-details"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{$value->email}}&nbsp;&nbsp;| &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;{{$value->phone_no}}</p>
 					<p class="catalogue-signature">Catalogue sent <span class="blue">{{$value->created_at->diffForHumans()}}</span> </p>
 
 				</div>
