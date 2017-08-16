@@ -9,7 +9,6 @@
         <script  src="/js/jquery-3.2.1.min.js"></script>
         <script  src="/js/jquery-ui.min.js"></script>
         <script  src="/js/bootstrap.js"></script>
-
         <!-- 
           <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         -->
@@ -51,7 +50,7 @@
 
                         <div class="form-group">
                           <label for="exampleTextarea">Brief Image Description</label>
-                          <textarea class="form-control"  rows="3"  name="descri"     required></textarea>
+                          <input type="text" class="form-control" name="descri"     required>
                         </div>
 
 

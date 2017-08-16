@@ -1,4 +1,5 @@
-
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
 <script src="/js/blog/post.js"></script>
   
           
@@ -31,7 +32,7 @@
                                       <div class="form-group">
                                         <label for="exampleTextarea">Blog Content</label>
 										
-									     <textarea class="form-control" id="blog_content" rows="3"  name="blog_content"  required></textarea>
+									     <textarea class="form-control" id="blog_content" rows="3"  name="blog_content"></textarea>
 
                                       </div>
 
