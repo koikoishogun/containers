@@ -15,7 +15,7 @@ $(document).ready(function(){
 			contentType:false,
 			processData:false,
 			data:d,
-			success:function(){
+			success:function(data){
 				$(".img_form")[0].reset();
 				//$("#msg_modal").modal("show");
 				alert(data);

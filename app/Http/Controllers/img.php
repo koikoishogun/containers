@@ -17,7 +17,7 @@ class img extends Controller
 			
 			if($sto){
 				
-				$de=["img"=>$sto,"category"=>$request->cat,"description"=>$request->descri];
+				$de=["image"=>$sto,"category"=>$request->cat,"description"=>$request->descri];
 				$ge=image::create($de);
 				
 				return $ms="success";

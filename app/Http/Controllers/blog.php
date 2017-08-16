@@ -107,7 +107,7 @@ class blog extends Controller
 	public function del_post($id){
 		$pst=p::destroy($id);
 		if($pst){
-			return redirect("/post-blog");;
+			return redirect("/post-blog");
 		}
 		
 	}
