@@ -1,7 +1,7 @@
 <!--START OF FOOTER -->
 
 <div class="container-fluid contact-us">
-                <div class="container">
+                <div class="container contact-holder">
                     <script src="/js/msg/msg.js"></script>
                             <div class="col-md-5 col-md-offset-1 question-form">
                                 <h3 class="red"><b>Still have a Question?</b></h3>
@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="col-md-11 col-xs-10">
-                                <b>Some Random Place.</br>Nairobi.</b>
+                                <b>Along Kuguru Loop</br>Off Entreprise Road near General Motors</br> Mombasa road</b>
                            
                            <!-- <div class="col-md-10">
                                 Omega Opticians Limited 2nd Floor,<br>
@@ -55,7 +55,8 @@
                             </div>
 
                              <div class="col-md-11 col-xs-10">
-                                <b>+254 797 66 33 72</b>
+                                <b>+254 797 66 33 72 (Mary)</b>
+                                <b>+254 707 05 30 48 (Mary)</b>
                             </div>
                            
                         </div>
@@ -85,7 +86,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
           </div>
           <div class="modal-body">
-                <p>Your Message  Has been Sent we'll email soonest</p>
+                <p>Your Message  Has been Sent we'll email shortly</p>
             
             
           </div>

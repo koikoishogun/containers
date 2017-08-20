@@ -503,7 +503,7 @@
                         </div>
 						<div class="input-group spacer">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <input type="number" class="form-control" name="no" placeholder="Enter Quantity" value=1 required>
+                          <input type="number" class="form-control" name="no" placeholder="Enter Quantity" required>
                         </div>
 
                     
@@ -639,7 +639,7 @@
                             </div>
 
                             <div class="col-md-11 col-xs-10">
-                                <b>Some Random Place.</br>Nairobi.</b>
+                                <b>Along Kuguru Loop</br>Off Entreprise Road near General Motors</br> Mombasa road</b>
                            
                            <!-- <div class="col-md-10">
                                 Omega Opticians Limited 2nd Floor,<br>
@@ -657,7 +657,8 @@
                             </div>
 
                              <div class="col-md-11 col-xs-10">
-                                <b>+254 797 66 33 72</b>
+                                 <b>+254 797 66 33 72 (Mary)</b></br>
+                                <b>+254 707 05 30 48 (John)</b>
                             </div>
                            
                         </div>

@@ -17,6 +17,9 @@
 			@endforeach
 			@endif
 
+			<div class="more-images">
+				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
+			</div>
 			
 		</div>
 
@@ -31,6 +34,11 @@
 					</div>
 			@endforeach
 			@endif
+
+			<div class="more-images">
+				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
+			</div>
+			
 		</div>
 
 		<div class="row product-category">
@@ -43,6 +51,11 @@
 					</div>
 			@endforeach
 			@endif
+
+			<div class="more-images">
+				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
+			</div>
+
 		</div>
 
 
@@ -56,6 +69,10 @@
 					</div>
 			@endforeach
 			@endif
+
+			<div class="more-images">
+				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
+			</div>
 		</div>
 
 
