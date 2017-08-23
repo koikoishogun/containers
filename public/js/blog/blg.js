@@ -42,6 +42,7 @@ $(document).ready(  function(){
 	}    );
 	$(".posts_div").on(  "click",".delete_btn" ,function(e){
 		e.stopImmediatePropagation();
+		e.preventDefault();
 		//e.stopPropagation();
 		//alert("test");
 		var id= $(".blg_id").val();

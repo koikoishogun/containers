@@ -8,18 +8,20 @@
 		
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Container Homes</b></h3>
-              @if(isset($ho))
+            @if(isset($ho))
 				 @foreach($ho as $value)
 					<div class="col-md-4 col-sm-6">
 				    <img  class="img-responsive story-thumbnail"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>" />
 
 					</div>
-			@endforeach
+			     @endforeach
+			@else
+				<p> No pics to display...</p>
+			
+			
 			@endif
 
-			<div class="more-images">
-				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
-			</div>
+			
 			
 		</div>
 
@@ -35,9 +37,9 @@
 			@endforeach
 			@endif
 
-			<div class="more-images">
-				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
-			</div>
+			
+				
+			
 			
 		</div>
 
@@ -52,9 +54,9 @@
 			@endforeach
 			@endif
 
-			<div class="more-images">
-				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
-			</div>
+			
+				
+			
 
 		</div>
 
@@ -70,9 +72,8 @@
 			@endforeach
 			@endif
 
-			<div class="more-images">
-				<button type="submit" class="product-button btn btn-primary pull-right">View all images</button>
-			</div>
+			
+				
 		</div>
 
 

@@ -29,7 +29,7 @@
 
 
 
-<!-- <button class="msg_li">Show Message</button>  -->
+ 
 
 
 <!--Upload Images Form Modal-->
@@ -96,6 +96,7 @@
    <img class="admin-logo logo-icon img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/>
 
     <div class="pull-right">
+	      <button class="btn btn-success msg_li">Show Message</button> 
           <a class="order_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/orders.jpg')}}"/></a>
           <a class="int_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/interested.jpg')}}"/></a>
           

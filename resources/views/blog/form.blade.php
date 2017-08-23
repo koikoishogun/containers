@@ -36,10 +36,11 @@
 
 
                                       <div class="form-group">
-                                        <label for="exampleInputFile">Upload Image</label>
+                                        <label for="exampleInputFile">Uploaded Image</label>
 										@if(isset ($image) )
-											<img  src="/storage/blog/{{$image}} "   / >
-										<label for="exampleInputFile1">Replace Image</label>
+											<!--<img  src="/storage/blog/{{$image}} "   / >  -->
+										<img  class="img-responsive blog-image"  src="data:image/jpeg;base64,<?php echo base64_encode( $image); ?>" />
+										<label for="exampleInputFile1">Replace Image With...</label>
 										<input type="file" class="form-control-file" id="exampleInputFile1" aria-describedby="fileHelp" name="img" required>
 										
 											

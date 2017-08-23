@@ -13,11 +13,11 @@ class blog extends Controller
     //
 	public function show(){
 		$posd=p::orderBy('created_at','desc')->SimplePaginate(5);
+		$fe=p::orderBy('created_at','desc')->first();
 		
-		return view('pages.blog',["posts"=>$posd]);
-		
-		
-	}
+			return view('pages.blog',["posts"=>$posd,"fat"=>$fe]);
+			
+			}
 	public function ty(Request $request){
 		//return view('pages.blog');
 		if( $request->isMethod("POST")  ){
@@ -67,14 +67,14 @@ class blog extends Controller
 				$pst=p::find($request->id);
 				if($pst){
 					if(  $request->file('img') && $request->file('img')->isValid()  ){
-						$path='/public/blog';
-				        $img_name=$request->file('img')->getClientOriginalName();
-						$sto=$request->file("img")->storeAs($path,$img_name);
+						//$path='/public/blog';
+				        //$img_name=$request->file('img')->getClientOriginalName();
+						$sto=file_get_contents($request->file('img'));
 						if($sto){
 							$pst->title=$request->blog_title;
 						$pst->name=$request->blog_author;
 						$pst->body=$request->blog_content;
-						$pst->image=$img_name;
+						$pst->image=$sto;
 						 $ps_p=$pst->save();
 						if($ps_p ){
 							//return $msg="success";

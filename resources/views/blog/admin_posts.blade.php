@@ -15,4 +15,7 @@
 			  </div>
 	   </div>
 		@endforeach
+@else
+	<p>Sorry no blogs to display....Post a blog...</p>
+
 @endif

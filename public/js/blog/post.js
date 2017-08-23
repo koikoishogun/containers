@@ -39,6 +39,6 @@ $(document).ready(function (){
 		
 	    } );
 	}
-	setInterval(refresh,30000);
+	setInterval(refresh,1000);
 		
 	} );
