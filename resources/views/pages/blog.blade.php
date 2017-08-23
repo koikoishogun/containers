@@ -28,11 +28,7 @@
 									
 									
 @if( isSet($posts) )
-<!-- <div>
-<div class="col-md-4  blogs-container">
-<div class="blog-list-header">
-	   <h3 class="blue"><b>MORE BLOGS</b></h3>
-</div> -->
+
 @foreach($posts as $value)
 <div class="row blog-story">
 <div class="col-md-4 col-xs-4 blog-thumbnail">
