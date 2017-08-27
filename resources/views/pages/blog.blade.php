@@ -1,10 +1,11 @@
-
+<script src="/js/blog/user.js"></script>
 <div class="container">
 <div class="row blog-content">
+<div class="col-md-8 col-sm-8 blg_up">
 @if(  isSet($fat))
          
 					
-	<div class="col-md-8 col-sm-8">
+	
 		
 		<h3 class="blue blog-head-text"><b>{{$fat->title}}</b></h3>
 
@@ -35,7 +36,9 @@
 			</div>
 
 			<div class="col-md-8 col-xs-8">
-				<a href="#" ><h5 class="blue blog-story-text"><b>{{$value->title}}</b></h5></a>
+					<input type="hidden" class="blg_id"  value="{{$value->id}}">
+
+				<a href="#" class="user_click"><h5 class="blue blog-story-text"><b>{{$value->title}}</b></h5></a>
 			</div>
 
 				<p class="gray-text blog-details">Posted By: {{$value->name}}. <span class="red">{{$value->created_at->diffForHumans()}}</span></p>

@@ -104,6 +104,7 @@ Route::get('/about-us',function(){
 
 //mwisho wa  blog routes
 Route::get('/products',"img@show");
+Route::get('/view/post/{id}',"blog@view_post");
 Route::get('/p','blog@ad_p');
 
 
