@@ -257,8 +257,7 @@
                   <p class="product-text" align="left">Create a distinctive customer experience in a shipping container cyber. Our cyber container conversions are unique and bespoke. Whether you already have an idea of how you want it done, or want us to recommend the perfect container cyber solution for you, our team can make your business concept a reality.</p>
                   
                   <ul class="price-list">
-                      <li><span class="gray">20ft at Ksh. 180,000/-</span></li>
-                      <li><span class="gray">40ft at Ksh. 280,000/-</span></li>
+                    
                     </ul>
 
                     <div class="buttons-container">  
