@@ -54,7 +54,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             //'host' => $host,//env('DB_HOST', '127.0.0.1'),
-			'host' => /* $host, */ env('DB_HOST', '127.0.0.1'),
+			'host' =>  $host,//  env('DB_HOST', '127.0.0.1'),
             //'port' => env('DB_PORT', '3306'),
             'database' => $database, /*env('DB_DATABASE', 'forge'),*/
             'username' => $username ,//  env('DB_USERNAME', 'forge'),
