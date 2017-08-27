@@ -96,13 +96,15 @@
    <img class="admin-logo logo-icon img-responsive" src="{{ URL::asset('/images/logo-02.png')}}"/>
 
     <div class="pull-right">
-	      <button class="btn btn-success msg_li">Show Message</button> 
+    
           <a class="order_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/orders.jpg')}}"/></a>
           <a class="int_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/interested.jpg')}}"/></a>
           
           <a class="blog_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/blog.jpg')}}"/></a>
 
           <a class="#" href="#" data-toggle="modal" data-target="#imageUpload"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/images.jpg')}}"/></a>
+
+          <a class="msg_li" href="#"><img class="admin-menu-icon img-responsive" src="{{ URL::asset('/images/messages.jpg')}}"/></a>
     </div>
 </div>
 <!--UPDATE  AJAX DIV -->

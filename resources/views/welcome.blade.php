@@ -240,8 +240,8 @@
                   <p class="product-text" align="left">Carry your temperature-controlled container cargo confident in the knowledge that it has received the ultimate care and attention. Our reefers deliver uniform and consistent air temperatures. Perfect freshness is guaranteed through precise air temperature and air flow management, preventing produce from losing moisture or shrinking.</p>
                   
                   <ul class="price-list">
-                      <li><span class="gray">20ft at Ksh. 180,000/-</span></li>
-                      <li><span class="gray">40ft at Ksh. 280,000/-</span></li>
+                      <li><span class="gray">20ft at Ksh. 1.3m </span></li>
+                      <li><span class="gray">40ft at Ksh. 1.4m </span></li>
                     </ul>
 
                     <div class="buttons-container">  

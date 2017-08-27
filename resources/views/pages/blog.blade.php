@@ -17,33 +17,32 @@
 		</p>
 		  
 				  
-					
-	</div>
 @else
 	<p>No blogs Posted Yet...</p>
 				
 @endif
 				
-				
-									
-									
-@if( isSet($posts) )
+	</div>	
 
-@foreach($posts as $value)
-<div class="row blog-story">
-<div class="col-md-4 col-xs-4 blog-thumbnail">
-	<img class="img-responsive blog-image"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>"   />
-</div>
+	<div class="col-md-4 col-sm-4">		
+																	
+		@if( isSet($posts) )
 
-<div class="col-md-8 col-xs-8">
-	<a href="#" ><h5 class="blue blog-head-text"><b>{{$value->title}}</b></h5></a>
-</div>
+		@foreach($posts as $value)
+		<div class="row blog-story">
+			<div class="col-md-4 col-xs-4 blog-thumbnail">
+				<img class="img-responsive blog-image"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>"   />
+			</div>
 
-	<p class="gray-text blog-details">Posted By: {{$value->name}}. <span class="red">{{$value->created_at->diffForHumans()}}</span></p>
-</div>
-@endforeach
+			<div class="col-md-8 col-xs-8">
+				<a href="#" ><h5 class="blue blog-story-text"><b>{{$value->title}}</b></h5></a>
+			</div>
+
+				<p class="gray-text blog-details">Posted By: {{$value->name}}. <span class="red">{{$value->created_at->diffForHumans()}}</span></p>
+		</div>
+		@endforeach
 	
-
+	</div>
  
 @else 
 	<div><p>No Posts...</p></div>
