@@ -60,11 +60,11 @@ return [
             'username' => $username ,//  env('DB_USERNAME', 'forge'),
             'password' => $password,//  env('DB_PASSWORD', ''),
             //'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-           'collation' => 'utf8mb4_unicode_ci',
-           'prefix' => '',
-            'strict' => true,
-           'engine' => "InnoDB",
+            //'charset' => 'utf8mb4',
+           //'collation' => 'utf8mb4_unicode_ci',
+           //'prefix' => '',
+            //'strict' => true,
+           //'engine' => "InnoDB",
         ],
 
         'pgsql' => [
