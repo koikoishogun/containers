@@ -113,9 +113,9 @@ class blog extends Controller
 	}
 	public function view_post($id){
 		$pst=p::find($id);
-		if($pst){
-			return view("blog.user_view",["user"=>$pst ]  );
-		}
+		
+	    return view("blog.user_view",["user"=>$pst ]  );
+	
 		
 	}
 	

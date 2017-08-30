@@ -9,12 +9,15 @@
 		<div class="row product-category">
 			<h3 class="red product-header"><b>Container Homes</b></h3>
             @if(isset($ho))
+				<div class="col-md-4 col-sm-6">
 				 @foreach($ho as $value)
-					<div class="col-md-4 col-sm-6">
+					
 				    <img  class="img-responsive story-thumbnail"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>" />
 
-					</div>
+					
 			     @endforeach
+				 {{$ho->links()}}
+				 </div>
 			@else
 				<p> No pics to display...</p>
 			
@@ -30,11 +33,14 @@
 			<h3 class="red product-header"><b>Office Blocks</b></h3>
 
 			@if(isset($off))
+				<div class="col-md-4 col-sm-6">
 				 @foreach($off as $value)
-					<div class="col-md-4 col-sm-6">
+					
 						<img  class="img-responsive story-thumbnail"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>" />
-					</div>
-			@endforeach
+
+			      @endforeach
+				  {{$off->links()}}
+				</div>
 			@endif
 
 			
@@ -47,11 +53,14 @@
 			<h3 class="red product-header"><b>Reefers</b></h3>
 
 			@if(isset($re))
+				<div class="col-md-4 col-sm-6">
 				 @foreach($re as $value)
-					<div class="col-md-4 col-sm-6">
+					
 						<img  class="img-responsive story-thumbnail"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>" />
-					</div>
-			@endforeach
+					
+			     @endforeach
+				 {{$re->links()}}
+			  </div>
 			@endif
 
 			
@@ -65,11 +74,14 @@
 			<h3 class="red product-header"><b>Dry Containers</b></h3>
 
 			@if(isset($dry))
+				<div class="col-md-4 col-sm-6">
 				 @foreach($dry as $value)
-					<div class="col-md-4 col-sm-6">
+					
 						<img  class="img-responsive story-thumbnail"  src="data:image/jpeg;base64,<?php echo base64_encode( $value->image); ?>" />
-					</div>
-			@endforeach
+					
+			     @endforeach
+				 {{$dry->links()}}
+				 </div>
 			@endif
 
 			

@@ -5,21 +5,26 @@ $(document).ready(  function(){
 					}
 	});
 	
-	$(".ajax_div").on("click",".user_click", function(e){
-		e.stopImmediatePropagation();
-		e.preventDefault();
-		var d=$(".blg_id").val();
-	    $.ajax({
-			type:"GET",
-			url:"/view/post/"+d,
-			async:true,
-			success: function(data){
-				$(".blg_up").empty().html(data);
-				//alert("hi");
+	$(".user_click").each( function(){
+		
+		$(this).click(  function(e){
+				e.stopImmediatePropagation();
+				e.preventDefault();
+				var d=$(this).attr("id");
+				$.ajax({
+				type:"GET",
+				url:"/view/post/"+d,
+				async:true,
+				success: function(data){
+					$(".blg_up").empty().html(data);
+					//alert("hi");
+					
+				}
 				
-			}
+			});
 			
-		});
+		} );
+		
 	} );
 		function refresh(){
 		$.ajax( {

@@ -27,7 +27,7 @@
 
 	<div class="col-md-4 col-sm-4">		
 																	
-		@if( isSet($posts) )
+@if( isSet($posts) )
 
 		@foreach($posts as $value)
 		<div class="row blog-story">
@@ -36,9 +36,8 @@
 			</div>
 
 			<div class="col-md-8 col-xs-8">
-					<input type="hidden" class="blg_id"  value="{{$value->id}}">
 
-				<a href="#" class="user_click"><h5 class="blue blog-story-text"><b>{{$value->title}}</b></h5></a>
+				<a href="#" class="user_click" id="{{$value->id}}"><h5 class="blue blog-story-text"><b>{{$value->title}}</b></h5></a>
 			</div>
 
 				<p class="gray-text blog-details">Posted By: {{$value->name}}. <span class="red">{{$value->created_at->diffForHumans()}}</span></p>

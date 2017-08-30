@@ -28,6 +28,7 @@ $(document).ready(   function(){
 			}
 		});
 	} );
+	//return blog
 	$(".blog_li").click( function(){
 		$.ajax({
 			type:"GET",
