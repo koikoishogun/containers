@@ -21,7 +21,7 @@ class blog extends Controller
 	public function ty(Request $request){
 		//return view('pages.blog');
 		if( $request->isMethod("POST")  ){
-			if( $request->file('img') && $request->file('img')->isValid()    ){
+			if( $request->file('img') && $request->file('img')->isValid() && $request->file("img")->getClientSize() <= 1000000 && $request->file("img")->getMaxFilesize()    ){
 				//$path='/public/blog';
 				//$img_name=$request->file('img')->getClientOriginalName();
 				//store file
@@ -47,7 +47,8 @@ class blog extends Controller
 			   
             }
 			else{
-				echo"invalid image";
+				$m="invalid image size max image size is  1mb ".$request->file("img")->getClientSize();
+				return $m;
 			}
 			
         }
