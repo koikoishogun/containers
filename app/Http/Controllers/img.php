@@ -33,6 +33,12 @@ class img extends Controller
 		$im_2=image::where("category","Reefers")->simplepaginate(3);
 		$im_3=image::where("category","Office Block")->simplepaginate(3);
 		$im_4=image::where("category","Homes")->simplepaginate(3);
-		return view("pages.products",["dry"=>$im_1,"re"=>$im_2,"off"=>$im_3,"ho"=>$im_4]);
+		if( $im_1 or  $im_2 or $im_3 or $im_4){
+		 return view("pages.products",["dry"=>$im_1,"re"=>$im_2,"off"=>$im_3,"ho"=>$im_4]);	
+		}
+		else{
+			return view("pages.products");
+		}
+		
 	}
 }

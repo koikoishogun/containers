@@ -11,6 +11,7 @@
         <script  src="/js/bootstrap.js"></script>
         <script  src="/js/welcome.js"></script>
 		<script  src="/js/wlc.js"></script>
+		<meta name="google-site-verification" content="R_BSaue9eQNB5V2afpbkzB5lh1o5tModhuwtF_pLJuc" />
 
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/containerskenya.css')}}" rel="stylesheet">
@@ -756,6 +757,7 @@
 	  
 	  
 	  <!-- End footer ---->
+	  
 	   <script src="/js/order/form.js"></script>
       <script  src="/js/cat/form.js"></script>
 	  </body>
