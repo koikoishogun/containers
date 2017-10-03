@@ -18,7 +18,7 @@
         <title>Containers Kenya</title>
 
        
-<<<<<<< HEAD
+
 			<!-- Global Site Tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107410195-2"></script>
 			<script>
@@ -28,17 +28,7 @@
 
 			  gtag('config', 'UA-107410195-2');
 			</script>
-=======
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107155686-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments)};
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-107155686-2');
-	</script>
->>>>>>> a0031e6ef295c9a8ba295fbdf96dd37dc3e48c0d
 
     </head>
   
